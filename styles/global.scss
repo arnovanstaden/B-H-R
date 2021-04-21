@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $white;
+  font-family: $font;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: $grey;
+  transition: 0.3s ease-out;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &.noscroll {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  color: unset;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+
+  &-track {
+    background: $white;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &-thumb {
+    background: $light-blue;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+      background: $dark-blue;
+    }
+  }
+
+}
