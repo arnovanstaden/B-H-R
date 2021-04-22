@@ -1,0 +1,32 @@
+@import "../../../../styles/variables.scss";
+
+.contact {
+    border-top: 1px solid $grey;
+    padding: 3rem 0;
+    align-items: center;
+
+    .text {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        text-align: center;
+
+        .logo {
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    }
+}

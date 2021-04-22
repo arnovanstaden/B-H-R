@@ -1,0 +1,29 @@
+@import "../../../../styles/variables.scss";
+
+.intro {
+    background-color: $dark-blue;
+
+    .content {
+        min-height: 17.5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        h1 {
+            margin: 0;
+            color: $white;
+            position: relative;
+            z-index: 5;
+        }
+
+        img {
+            position: absolute;
+            height: 110%;
+            right: 5vw;
+            top: 0;
+        }
+    }
+
+
+}

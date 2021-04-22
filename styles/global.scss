@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-
+// GENERAL & Baseline
 html {
   scroll-behavior: smooth;
 }
@@ -30,12 +30,46 @@ body {
   }
 }
 
-
 a {
   text-decoration: none;
   transition: 0.3s ease-in-out;
   color: unset;
 }
+
+
+
+
+// --------------------------------------------
+// UI
+
+// Typography
+
+.heading {
+  padding: 3rem 0;
+
+  h1 {
+    color: $dark-blue;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+}
+
+.divider {
+  border: none;
+  border-top: 0.5px solid $grey;
+
+}
+
+
+
+// ScrollBar
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -54,5 +88,19 @@ a {
       background: $dark-blue;
     }
   }
+}
 
+.button {
+  background-color: $light-blue;
+  font-size: 0.8rem;
+  color: $white;
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  border: 2px solid $light-blue;
+
+  &:hover {
+    background-color: transparent;
+    color: $dark-blue;
+  }
 }

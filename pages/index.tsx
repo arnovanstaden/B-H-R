@@ -1,8 +1,10 @@
 // Components
-import Page from "../components/Page/Page";
+import Page from "../components/UI/Page/Page";
+
+
 
 // Styles
-import styles from '../styles/pages/home.module.scss'
+import styles from '../styles/pages/home.module.scss';
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
         canonical: "/"
       }}
     >
-      Home
+
     </Page>
   )
 }

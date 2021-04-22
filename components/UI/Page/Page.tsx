@@ -1,9 +1,11 @@
 // Components
-import Head from "../Head/Head";
+import Head from "../../Head/Head";
+import FooterContact from "../Footer/Contact/Contact";
 
 interface ILayout {
     children: React.ReactNode;
     className: string;
+    contact?: boolean;
     head: {
         title: string;
         description: string;
@@ -19,6 +21,7 @@ const Page = (props: ILayout) => {
             <Head {...props.head} />
             <main className={props.className}>
                 {props.children}
+                <FooterContact contact={props.contact} />
             </main>
         </>
     )

@@ -1,1 +1,77 @@
 @import "../variables.scss";
+
+.contact {
+    .content {
+        padding: 1rem 0 6rem 0;
+
+        h3 {
+            color: $dark-blue;
+            font-size: 1.2rem;
+            margin: 0 0 1rem 0;
+        }
+
+        .details {
+            padding-right: 2rem;
+
+            a {
+                display: block;
+                font-weight: 500;
+                padding: 0.25rem 0;
+
+                span {
+                    font-weight: 700;
+                    color: $light-blue;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+        .form {
+            border-left: 4px solid $light-blue;
+            padding-left: 2rem;
+
+            input,
+            textarea {
+                font-family: $font;
+                color: $grey;
+                padding: 0.5rem 0.75rem;
+                border: 0.75px solid $light-grey;
+                width: 100%;
+                box-sizing: border-box;
+                resize: none;
+                font-weight: 500;
+
+                &::placeholder {
+                    font-weight: 300;
+                }
+
+                &:focus {
+                    border-radius: 0;
+                    border-color: $light-blue;
+                    outline: none;
+                }
+            }
+
+            .button {
+                margin-top: 1rem;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .content {
+            .details {
+                padding: 0;
+            }
+
+            .form {
+                padding: 0;
+                margin-top: 4rem;
+                border: none;
+            }
+        }
+    }
+}

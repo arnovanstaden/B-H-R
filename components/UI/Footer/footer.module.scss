@@ -1,0 +1,61 @@
+@import "../../../styles/variables.scss";
+
+.footer {
+    padding-bottom: 2rem;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 1.5rem;
+        border-top: 1px solid $grey;
+
+        p {
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        .company {
+            img {
+                height: 5rem;
+            }
+        }
+
+        .social {
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin-left: 1rem;
+
+
+                    a {
+                        color: $light-grey;
+
+                        i {
+                            font-size: 1.5rem;
+                        }
+
+                        &:hover {
+                            color: $light-blue;
+                        }
+                    }
+                }
+            }
+
+            p a {
+                color: $light-blue;
+
+                &:hover {
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+}
