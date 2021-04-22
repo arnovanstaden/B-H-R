@@ -1,1 +1,93 @@
 @import "../variables.scss";
+
+.about {
+
+    p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 1rem 0;
+    }
+
+    .intro {
+        padding: 4rem 0;
+
+        .expertise {
+            padding-top: 3rem;
+
+            .text {
+                padding: 2rem
+            }
+        }
+
+        .dealers {
+            text-align: center;
+
+            .logos {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 10rem;
+                    // height: 3rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .mission {
+        background-color: $dark-blue;
+
+        .text {
+            padding: 4rem 2rem;
+
+            h1 {
+                color: $light-blue;
+            }
+
+            p {
+                color: $white;
+            }
+        }
+
+        .image {
+            overflow: hidden;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 0;
+                right: 10%;
+                height: 110%;
+                opacity: 0.75;
+            }
+        }
+    }
+
+    .values {
+        padding: 4rem 0;
+
+        .item {
+            padding-right: 4rem;
+
+            h2 {
+                color: $light-blue;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        text-align: center;
+
+        .values {
+
+            .item {
+                padding-right: 0;
+
+
+            }
+        }
+    }
+}

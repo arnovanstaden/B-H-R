@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# image sources
+/public/images/pages/SOURCES

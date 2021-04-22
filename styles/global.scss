@@ -44,6 +44,20 @@ a {
 
 // Typography
 
+h1 {
+  color: $dark-blue;
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
 .heading {
   padding: 3rem 0;
 
@@ -52,12 +66,18 @@ a {
     font-size: 2rem;
     margin: 0;
     margin-bottom: 1rem;
+
+    span {
+      color: $light-blue;
+    }
   }
 
   h2 {
-    font-weight: 600;
-    font-size: 1.4rem;
+    font-weight: 500;
+    font-size: 1.25rem;
     margin: 0;
+    line-height: 1.5;
+    padding-right: 10%;
   }
 }
 
@@ -102,5 +122,25 @@ a {
   &:hover {
     background-color: transparent;
     color: $dark-blue;
+  }
+}
+
+
+// --------------
+// NEXT SPECIFIC
+
+// Next Images
+.next-image-container {
+  width: 100%;
+
+  >div {
+    position: unset !important;
+  }
+
+  .next-image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
   }
 }

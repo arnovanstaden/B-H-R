@@ -22,7 +22,7 @@ const Contact = ({ contact }: IProps) => {
                     <a className="button" href="/contact">Contact Us</a>
                 </Grid>
                 <Grid item sm={6} className={styles.logo}>
-                    <img src="/images/logos/footer-logo.png" alt="" />
+                    <img src="/images/logos/footer-logo.svg" alt="" />
                 </Grid>
             </Grid>
         </Container>

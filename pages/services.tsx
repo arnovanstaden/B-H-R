@@ -1,10 +1,21 @@
-import React from 'react'
+// Components
+import Page from "../components/UI/Page/Page";
+
+// Styles
+import styles from '../styles/pages/services.module.scss';
 
 const services = () => {
     return (
-        <div>
+        <Page
+            className={styles.services}
+            head={{
+                title: "Services | BHR Solutions",
+                description: "FIX THIS",
+                canonical: "/services"
+            }}
+        >
 
-        </div>
+        </Page>
     )
 }
 
