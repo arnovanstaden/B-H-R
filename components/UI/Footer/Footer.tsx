@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.content}>
                 <div className={styles.company}>
-                    <img src="/images/icons/building.svg" alt="" />
+                    <img src="/images/icons/logomark.svg" alt="" />
                     <p>© 2020 BHR Solutions</p>
                 </div>
                 <div className={styles.social}>

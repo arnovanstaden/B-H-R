@@ -31,144 +31,143 @@ const about = () => {
             </PageNav>
 
             <Container>
-                <div className={styles.content}>
 
-                    <div className={styles.intro}>
-                        <Grid container className={styles.text}>
-                            <Grid item xs={12} sm={5}>
-                                <h1>About Us</h1>
-                            </Grid>
-                            <Grid item xs={12} sm={7}>
-                                <p>
-                                    BHR Solutions is a B-BBEE compliant project,
-                                    construction and MEFP (Mechanical, Electrical,
-                                    Fire and Plumbing) management company. We
-                                    operate with transparency, focus on building
-                                    trustworthy partnerships and act with integrity
-                                    and respect.
-                                </p>
-                                <p>
-                                    Our company’s owners have day-to-day
-                                    involvement in operations ensuring our staff
-                                    deliver satisfactory customer service.
-                                </p>
-                            </Grid>
+                <section className={styles.intro}>
+                    <Grid container className={styles.text}>
+                        <Grid item xs={12} sm={5}>
+                            <h1>About Us</h1>
                         </Grid>
-
-                        <Grid container className={styles.expertise}>
-                            <Grid item xs={12} sm={6}>
-                                <div className="next-image-container">
-                                    <Image
-                                        src="/images/pages/about/about1.jpg"
-                                        alt="Picture of BHR Aircon Cleaning"
-                                        layout="fill"
-                                        className="next-image"
-                                    />
-                                </div>
-                                <div className={styles.text}>
-                                    <h2>International experience and local knowledge</h2>
-                                    <p>
-                                        With industry experience of over 35 years
-                                        to bring project management and MEFP
-                                        Management compliance of international
-                                        standards to Africa, BHR Solutions has
-                                        evolved over the years, adapting to changing
-                                        conditions and industry demands.
+                        <Grid item xs={12} sm={7}>
+                            <p>
+                                BHR Solutions is a B-BBEE compliant project,
+                                construction and MEFP (Mechanical, Electrical,
+                                Fire and Plumbing) management company. We
+                                operate with transparency, focus on building
+                                trustworthy partnerships and act with integrity
+                                and respect.
                                 </p>
-                                </div>
-                            </Grid>
-                            <Grid item xs={12} sm={6}>
-                                <div className="next-image-container">
-                                    <Image
-                                        src="/images/pages/about/about2.jpg"
-                                        alt="Picture of BHR Welding"
-                                        layout="fill"
-                                        className="next-image"
-                                    />
-                                </div>
-                                <div className={styles.text}>
-                                    <h2>Bringing technology and innovation to Africa</h2>
-                                    <p>
-                                        Staffed with personnel of international
-                                        experience and use of the local knowledge
-                                        we have successfully delivered on projects
-                                        within the building, hospitality and retail
-                                        industries in Africa.
+                            <p>
+                                Our company’s owners have day-to-day
+                                involvement in operations ensuring our staff
+                                deliver satisfactory customer service.
                                 </p>
-                                </div>
-                            </Grid>
                         </Grid>
+                    </Grid>
 
-                        <div className={styles.dealers}>
-                            <h3>We are an authorised specialised dealer of</h3>
-                            <div className={styles.logos}>
-                                <img src="/images/pages/about/daikin.svg" alt="daikin logo" />
-                                <img src="/images/pages/about/samsung.svg" alt="samsung logo" />
-                                <img src="/images/pages/about/lg.svg" alt="lg logo" />
+                    <Grid container className={styles.expertise}>
+                        <Grid item xs={12} sm={6}>
+                            <div className="next-image-container">
+                                <Image
+                                    src="/images/pages/about/about1.jpg"
+                                    alt="Picture of BHR Aircon Cleaning"
+                                    layout="fill"
+                                    className="next-image"
+                                />
                             </div>
+                            <div className={styles.text}>
+                                <h2>International experience and local knowledge</h2>
+                                <p>
+                                    With industry experience of over 35 years
+                                    to bring project management and MEFP
+                                    Management compliance of international
+                                    standards to Africa, BHR Solutions has
+                                    evolved over the years, adapting to changing
+                                    conditions and industry demands.
+                                </p>
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <div className="next-image-container">
+                                <Image
+                                    src="/images/pages/about/about2.jpg"
+                                    alt="Picture of BHR Welding"
+                                    layout="fill"
+                                    className="next-image"
+                                />
+                            </div>
+                            <div className={styles.text}>
+                                <h2>Bringing technology and innovation to Africa</h2>
+                                <p>
+                                    Staffed with personnel of international
+                                    experience and use of the local knowledge
+                                    we have successfully delivered on projects
+                                    within the building, hospitality and retail
+                                    industries in Africa.
+                                </p>
+                            </div>
+                        </Grid>
+                    </Grid>
+
+                    <div className={styles.dealers}>
+                        <h3>We are an authorised specialised dealer of</h3>
+                        <div className={styles.logos}>
+                            <img src="/images/pages/about/daikin.svg" alt="daikin logo" />
+                            <img src="/images/pages/about/samsung.svg" alt="samsung logo" />
+                            <img src="/images/pages/about/lg.svg" alt="lg logo" />
+                            {/* FIX THIS */}
                         </div>
                     </div>
+                </section>
 
-                    <div id="mission" className={styles.mission}>
-                        <Grid container>
-                            <Grid item xs={12} sm={6} className={styles.text}>
-                                <h1>Our Mission</h1>
-                                <p>While risk management and budget control
-                                remain a core mission, centre to BHR
-                                Solutions is long-term partnerships and
-                                adding value to our client’s strategy, focus
-                                on combining technology, sustainability and innovative solutions.
+                <section id="mission" className={styles.mission}>
+                    <Grid container className={styles.grid}>
+                        <Grid item xs={12} sm={6} className={styles.text}>
+                            <h1>Our Mission</h1>
+                            <p>While risk management and budget control
+                            remain a core mission, centre to BHR
+                            Solutions is long-term partnerships and
+                            adding value to our client’s strategy, focus
+                            on combining technology, sustainability and innovative solutions.
                                 </p>
-                            </Grid>
-                            <Grid item xs={12} sm={6} className={styles.image}>
-                                <img src="/images/icons/building-light-blue.svg" alt="" />
-                            </Grid>
                         </Grid>
-                    </div>
-
-                    <div id="values" className={styles.values}>
-                        <h1>What Matters To Us</h1>
-                        <Grid container spacing={5}>
-                            <Grid item xs={12} sm={6} className={styles.item}>
-                                <h2>People</h2>
-                                <p>
-                                    Donec fringilla porttitor velit, vitae
-                                    facilisis neque rutrum at. Etiam
-                                    ligula justo, elementum nec dolor in,
-                                    pharetra sagittis tortor.
-                                </p>
-                            </Grid>
-                            <Grid item xs={12} sm={6} className={styles.item}>
-                                <h2>Partnership</h2>
-                                <p>
-                                    Donec fringilla porttitor velit, vitae
-                                    facilisis neque rutrum at. Etiam
-                                    ligula justo, elementum nec dolor in,
-                                    pharetra sagittis tortor.
-                                </p>
-                            </Grid>
-                            <Grid item xs={12} sm={6} className={styles.item}>
-                                <h2>Technology</h2>
-                                <p>
-                                    Donec fringilla porttitor velit, vitae
-                                    facilisis neque rutrum at. Etiam
-                                    ligula justo, elementum nec dolor in,
-                                    pharetra sagittis tortor.
-                                </p>
-                            </Grid>
-                            <Grid item xs={12} sm={6} className={styles.item}>
-                                <h2>Delivery</h2>
-                                <p>
-                                    Donec fringilla porttitor velit, vitae
-                                    facilisis neque rutrum at. Etiam
-                                    ligula justo, elementum nec dolor in,
-                                    pharetra sagittis tortor.
-                                </p>
-                            </Grid>
+                        <Grid item xs={12} sm={6} className={styles.image}>
+                            <img src="/images/icons/logomark-light-blue.svg" alt="" />
                         </Grid>
-                    </div>
+                    </Grid>
+                </section>
 
-                </div>
+                <section id="values" className={styles.values}>
+                    <h1>What Matters To Us</h1>
+                    <Grid container spacing={5}>
+                        <Grid item xs={12} sm={6} className={styles.item}>
+                            <h2>People</h2>
+                            <p>
+                                Donec fringilla porttitor velit, vitae
+                                facilisis neque rutrum at. Etiam
+                                ligula justo, elementum nec dolor in,
+                                pharetra sagittis tortor.
+                                </p>
+                        </Grid>
+                        <Grid item xs={12} sm={6} className={styles.item}>
+                            <h2>Partnership</h2>
+                            <p>
+                                Donec fringilla porttitor velit, vitae
+                                facilisis neque rutrum at. Etiam
+                                ligula justo, elementum nec dolor in,
+                                pharetra sagittis tortor.
+                                </p>
+                        </Grid>
+                        <Grid item xs={12} sm={6} className={styles.item}>
+                            <h2>Technology</h2>
+                            <p>
+                                Donec fringilla porttitor velit, vitae
+                                facilisis neque rutrum at. Etiam
+                                ligula justo, elementum nec dolor in,
+                                pharetra sagittis tortor.
+                                </p>
+                        </Grid>
+                        <Grid item xs={12} sm={6} className={styles.item}>
+                            <h2>Delivery</h2>
+                            <p>
+                                Donec fringilla porttitor velit, vitae
+                                facilisis neque rutrum at. Etiam
+                                ligula justo, elementum nec dolor in,
+                                pharetra sagittis tortor.
+                                </p>
+                        </Grid>
+                    </Grid>
+                </section>
+
             </Container>
         </Page>
     )

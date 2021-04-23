@@ -26,5 +26,19 @@
         }
     }
 
+    @media screen and (max-width: 600px) {
+        text-align: center;
 
+        .content {
+            justify-content: center;
+
+
+            img {
+                left: 50%;
+                transform: translateX(-50%);
+                right: unset;
+                opacity: 0.5;
+            }
+        }
+    }
 }

@@ -10,7 +10,6 @@
     }
 
     .intro {
-        padding: 4rem 0;
 
         .expertise {
             padding-top: 3rem;
@@ -38,36 +37,38 @@
     }
 
     .mission {
-        background-color: $dark-blue;
 
-        .text {
-            padding: 4rem 2rem;
+        .grid {
+            background-color: $dark-blue;
 
-            h1 {
-                color: $light-blue;
+            .text {
+                padding: 4rem 2rem;
+
+                h1 {
+                    color: $light-blue;
+                }
+
+                p {
+                    color: $white;
+                }
             }
 
-            p {
-                color: $white;
-            }
-        }
+            .image {
+                overflow: hidden;
+                position: relative;
 
-        .image {
-            overflow: hidden;
-            position: relative;
-
-            img {
-                position: absolute;
-                top: 0;
-                right: 10%;
-                height: 110%;
-                opacity: 0.75;
+                img {
+                    position: absolute;
+                    top: 0;
+                    right: 10%;
+                    height: 110%;
+                    opacity: 0.75;
+                }
             }
         }
     }
 
     .values {
-        padding: 4rem 0;
 
         .item {
             padding-right: 4rem;
@@ -81,12 +82,23 @@
     @media screen and (max-width: 600px) {
         text-align: center;
 
+        .intro {
+            .dealers {
+
+                .logos {
+                    flex-direction: column;
+
+                    img {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
         .values {
 
             .item {
                 padding-right: 0;
-
-
             }
         }
     }

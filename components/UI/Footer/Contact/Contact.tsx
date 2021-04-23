@@ -15,17 +15,20 @@ const Contact = ({ contact }: IProps) => {
     }
 
     return (
-        <Container>
-            <Grid container spacing={2} className={styles.contact}>
-                <Grid item sm={6} className={styles.text}>
-                    <h1>Contact us and discover how we can make a difference to your business.</h1>
-                    <a className="button" href="/contact">Contact Us</a>
+        <section className={styles.contact}>
+            <Container>
+                <Grid container spacing={2} className={styles.grid}>
+                    <Grid item sm={6} className={styles.text}>
+                        <h1>Contact us and discover how we can make a difference to your business.</h1>
+                        <a className="button" href="/contact">Contact Us</a>
+                    </Grid>
+                    <Grid item sm={6} className={styles.logo}>
+                        <img src="/images/logos/footer-logo.svg" alt="" />
+                    </Grid>
                 </Grid>
-                <Grid item sm={6} className={styles.logo}>
-                    <img src="/images/logos/footer-logo.svg" alt="" />
-                </Grid>
-            </Grid>
-        </Container>
+            </Container>
+        </section>
+
     )
 }
 

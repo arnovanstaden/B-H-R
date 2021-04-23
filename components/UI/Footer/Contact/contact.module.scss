@@ -2,33 +2,37 @@
 
 .contact {
     border-top: 1px solid $grey;
-    padding: 3rem 0;
-    align-items: center;
 
-    .text {
-        h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-    }
-
-    .logo {
-        display: flex;
-        justify-content: flex-start;
+    .grid {
         align-items: center;
-        width: 100%;
 
-        img {
-            width: 80%;
+        .text {
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+
+            img {
+                width: 80%;
+            }
         }
     }
 
     @media screen and (max-width: 600px) {
         text-align: center;
 
-        .logo {
-            justify-content: center;
-            margin-top: 2rem;
+        .grid {
+            .logo {
+                justify-content: center;
+                margin-top: 2rem;
+            }
         }
     }
 }

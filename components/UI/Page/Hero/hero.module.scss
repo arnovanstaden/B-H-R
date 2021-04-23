@@ -1,0 +1,54 @@
+@import "../../../../styles/variables.scss";
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-image: url("/images/pages/home/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 40vh;
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.25);
+
+        .gradient {
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 56, 101, 0.6);
+            background: -moz-linear-gradient(left, rgba(0, 56, 101, 0.6) 0%, rgba(0, 44, 80, 0.6) 21%, rgba(0, 27, 49, 0.22) 51%, rgba(0, 0, 0, 0.22) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 56, 101, 0.6)), color-stop(21%, rgba(0, 44, 80, 0.6)), color-stop(51%, rgba(0, 27, 49, 0.22)), color-stop(100%, rgba(0, 0, 0, 0.22)));
+            background: -webkit-linear-gradient(left, rgba(0, 56, 101, 0.6) 0%, rgba(0, 44, 80, 0.6) 21%, rgba(0, 27, 49, 0.22) 51%, rgba(0, 0, 0, 0.22) 100%);
+            background: -o-linear-gradient(left, rgba(0, 56, 101, 0.6) 0%, rgba(0, 44, 80, 0.6) 21%, rgba(0, 27, 49, 0.22) 51%, rgba(0, 0, 0, 0.22) 100%);
+            background: -ms-linear-gradient(left, rgba(0, 56, 101, 0.6) 0%, rgba(0, 44, 80, 0.6) 21%, rgba(0, 27, 49, 0.22) 51%, rgba(0, 0, 0, 0.22) 100%);
+            background: linear-gradient(to right, rgba(0, 56, 101, 0.6) 0%, rgba(0, 44, 80, 0.6) 21%, rgba(0, 27, 49, 0.22) 51%, rgba(0, 0, 0, 0.22) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003865', endColorstr='#000000', GradientType=1);
+        }
+    }
+
+    .text {
+        // position: relative;
+        z-index: 5;
+
+        h1 {
+            margin: 0;
+            color: $white;
+            font-size: 2.25rem;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            color: $light-blue;
+            margin: 0 0 0.25rem 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+    }
+}

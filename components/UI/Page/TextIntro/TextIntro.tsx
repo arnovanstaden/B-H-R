@@ -14,7 +14,7 @@ const TextIntro = ({ title }: IProps) => {
             <Container>
                 <div className={styles.content}>
                     <h1>{title}</h1>
-                    <img src="/images/icons/building-light-blue.svg" alt="" />
+                    <img src="/images/icons/logomark-light-blue.svg" alt="" />
                 </div>
             </Container>
         </div>
