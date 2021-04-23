@@ -1,1 +1,47 @@
 @import "../variables.scss";
+
+.solutions {
+
+    .approach {
+        background-color: rgba($color: $grey, $alpha: 0.15);
+
+        .text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                color: $light-blue;
+            }
+
+            p {
+                line-height: 1.5;
+                font-weight: 500;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .structure {
+
+        .block {
+
+            .text {
+                h3 {
+                    color: $light-blue;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 1.1rem;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+    }
+}

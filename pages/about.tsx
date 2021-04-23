@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Page from "../components/UI/Page/Page";
 import TextIntro from "../components/UI/Page/TextIntro/TextIntro";
 import PageNav from "../components/UI/Page/PageNav/PageNav"
+import NextImage from "../components/NextImage/NextImage"
 
 // MUI
 import Container from "@material-ui/core/Container";
@@ -54,16 +55,12 @@ const about = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid container className={styles.expertise}>
+                    <Grid container className={styles.expertise} spacing={5}>
                         <Grid item xs={12} sm={6}>
-                            <div className="next-image-container">
-                                <Image
-                                    src="/images/pages/about/about1.jpg"
-                                    alt="Picture of BHR Aircon Cleaning"
-                                    layout="fill"
-                                    className="next-image"
-                                />
-                            </div>
+                            <NextImage
+                                src="/images/pages/about/about1.jpg"
+                                alt="BHR Aircon Cleaning"
+                            />
                             <div className={styles.text}>
                                 <h2>International experience and local knowledge</h2>
                                 <p>
@@ -77,14 +74,10 @@ const about = () => {
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <div className="next-image-container">
-                                <Image
-                                    src="/images/pages/about/about2.jpg"
-                                    alt="Picture of BHR Welding"
-                                    layout="fill"
-                                    className="next-image"
-                                />
-                            </div>
+                            <NextImage
+                                src="/images/pages/about/about2.jpg"
+                                alt="BHR Welding"
+                            />
                             <div className={styles.text}>
                                 <h2>Bringing technology and innovation to Africa</h2>
                                 <p>

@@ -1,0 +1,26 @@
+@import "../../../styles/variables.scss";
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h6 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0.5rem 0 0 0;
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 7rem;
+        }
+    }
+}

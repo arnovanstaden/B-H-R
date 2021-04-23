@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 // Components
 import Page from "../components/UI/Page/Page";
 import Hero from "../components/UI/Page/Hero/Hero";
+import AreasOfWork from "../components/Content/AreasOfWork/AreasOfWork"
+import BHRIcons from "../components/Content/BHRIcons/BHRIcons"
 
 // MUI
 import Container from "@material-ui/core/Container";
@@ -47,27 +49,14 @@ export default function Home() {
             <h1>Meet <span>BHR Solutions</span></h1>
             <h2>We pride ourselves on being a one-stop shop that is able to meet our client’s needs. Our goal is to privide a high quality customer service. We understand that time and cost are crucial so we strive to go above and beyond our client’s expectations.</h2>
           </div>
-          <Grid container>
+          <Grid container spacing={5}>
             <Grid item xs={12} sm={6} className={`${styles.contentBlock} ${styles.solutions}`}>
               <div className={styles.text}>
                 <h2>Industry Solutions</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
                 <a href="/solutions" className="button">Discover</a>
               </div>
-              <div className={styles.icons}>
-                <div>
-                  <img src="/images/icons/building.svg" alt="" />
-                  <h6>Building</h6>
-                </div>
-                <div>
-                  <img src="/images/icons/hospitality.svg" alt="" />
-                  <h6>Hospitality</h6>
-                </div>
-                <div>
-                  <img src="/images/icons/retail.svg" alt="" />
-                  <h6>Retail</h6>
-                </div>
-              </div>
+              <BHRIcons />
             </Grid>
             <Grid item xs={12} sm={6} className={`${styles.contentBlock} ${styles.services}`} id="#servicesBlock">
               <div className={styles.text}>
@@ -98,60 +87,38 @@ export default function Home() {
           maintenance programs</span>.</p>
             <p>Above all we are a trusted advocate to our clients in the HVAC and Mechanical Industry.</p>
           </div>
-          <Grid container>
-            <Grid item sm={4} className={styles.value}>
-              <h5>Sustainabilty</h5>
-              <p>
-                To ensure your needs have long-term cost-effectiveness and environmental sustainability
-              </p>
+          <Grid container spacing={5}>
+            <Grid item sm={4} >
+              <div className={styles.value}>
+                <h5>Sustainabilty</h5>
+                <p>
+                  To ensure your needs have long-term cost-effectiveness and environmental sustainability
+                </p>
+              </div>
             </Grid>
-            <Grid item sm={4} className={styles.value}>
-              <h5>Sustainabilty</h5>
-              <p>
-                To ensure your needs have long-term cost-effectiveness and environmental sustainability
+            <Grid item sm={4} >
+              <div className={styles.value}>
+                <h5>Compliance</h5>
+                <p>
+                  We only provide high quality workmanship and professionalism to ensure legal compliance
               </p>
+              </div>
             </Grid>
-            <Grid item sm={4} className={styles.value}>
-              <h5>Sustainabilty</h5>
-              <p>
-                To ensure your needs have long-term cost-effectiveness and environmental sustainability
+            <Grid item sm={4}>
+              <div className={styles.value}>
+                <h5>Support</h5>
+                <p>
+                  We offer fast, reliable service with guaranteed after sale support.
               </p>
+              </div>
             </Grid>
           </Grid>
 
         </section>
 
         <section className={styles.areas}>
-          <div className={styles.intro}>
-            <h1>Areas of Work</h1>
-            <div className={styles.icons}>
-              <div>
-                <img src="/images/icons/services/design.svg" alt="" />
-                <h6>Design</h6>
-              </div>
-              <div>
-                <img src="/images/icons/services/mechanical.svg" alt="" />
-                <h6>Mechanical</h6>
-              </div>
-              <div>
-                <img src="/images/icons/services/electrical.svg" alt="" />
-                <h6>Electrical</h6>
-              </div>
-              <div>
-                <img src="/images/icons/services/fire-safety.svg" alt="" />
-                <h6>Fire and Safety</h6>
-              </div>
-              <div>
-                <img src="/images/icons/services/plumbing.svg" alt="" />
-                <h6>Plumbing</h6>
-              </div>
-              <div>
-                <img src="/images/icons/services/sanitisation.svg" alt="" />
-                <h6>Sanitisation</h6>
-              </div>
-            </div>
-            <a href="/services" className="button">Discover</a>
-          </div>
+
+          <AreasOfWork />
 
           <Grid container>
             <Grid item xs={12} sm={6} className={`${styles.contentBlock} ${styles.sanitisation}`}

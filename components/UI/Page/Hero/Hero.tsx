@@ -8,7 +8,7 @@ import styles from "./hero.module.scss";
 
 interface IProps {
     title: string;
-    subtitle: string;
+    subtitle?: string;
     image?: string;
 }
 
@@ -20,7 +20,7 @@ const Hero = ({ title, subtitle, image }: IProps) => {
             </div>
             <div className={styles.text}>
                 <Container>
-                    <h4>{subtitle}</h4>
+                    {subtitle ? <h4>{subtitle}</h4> : null}
                     <h1>{title}</h1>
                 </Container>
             </div>
