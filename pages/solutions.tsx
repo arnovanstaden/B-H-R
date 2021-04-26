@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 // Components
 import Page from "../components/UI/Page/Page";
 import Hero from "../components/UI/Page/Hero/Hero";
