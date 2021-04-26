@@ -11,17 +11,17 @@ const Footer = () => {
                 <div className={styles.social}>
                     <ul className={styles.social}>
                         <li>
-                            <a href="https://www.facebook.com/bhrsolutions" target="blank">
+                            <a href="https://www.facebook.com/bhrsolutions" target="blank" aria-label="facebook">
                                 <i className="icon-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/" target="blank">
+                            <a href="https://www.linkedin.com/" target="blank" aria-label="linkedin">
                                 <i className="icon-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com" target="blank">
+                            <a href="https://twitter.com" target="blank" aria-label="twitter">
                                 <i className="icon-twitter"></i>
                             </a>
                         </li>

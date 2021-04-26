@@ -1,10 +1,14 @@
 
 // MUI
 import Container from "@material-ui/core/Container";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import styles from "./nav.module.scss";
 
 const PageNav = ({ links, page }) => {
+    // Config
+    const isMobileDevice = useMediaQuery('(max-width:760px)');
+
     const keys = Object.keys(links);
 
     // handlers
@@ -14,6 +18,10 @@ const PageNav = ({ links, page }) => {
             elem.classList.remove(styles.active)
         })
         clickedElement.target.classList.add(styles.active);
+    }
+
+    if (isMobileDevice) {
+        return null
     }
 
     return (
