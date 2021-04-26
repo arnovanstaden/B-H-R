@@ -1,1 +1,119 @@
 @import "../variables.scss";
+
+.team {
+
+    section {
+        border-top: 1px solid $light-grey;
+    }
+
+    ul {
+        padding: 0;
+        padding-left: 1rem;
+    }
+
+    .training {
+
+        .initiatives {
+
+            h3 {
+                color: $light-blue;
+                font-size: 1.2rem;
+            }
+        }
+
+        .grid {
+            padding-top: 2rem;
+            align-items: center;
+        }
+    }
+
+    .inclusion {
+
+        .contentBlock {
+            border-bottom: 1.5px solid $light-blue;
+
+            .image {
+                position: relative;
+
+                .member {
+                    position: absolute;
+                    bottom: 1rem;
+                    left: 1rem;
+                    color: $white;
+
+                    h6 {
+                        font-size: 1.2rem;
+                        margin: 0;
+                        margin-bottom: 0.25rem;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .text {
+                padding: 1rem;
+
+                p {
+                    font-weight: 500;
+                }
+            }
+
+
+        }
+    }
+
+    .expertise {
+        .quoteGrid {
+            align-items: center;
+
+            .quote {
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    line-height: 1.5;
+                }
+
+                h6 {
+                    color: $light-blue;
+                    font-size: 1.1rem;
+                    margin: 0;
+                }
+
+                small {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .textGrid {
+            padding-top: 2rem;
+
+            h5 {
+                color: $light-blue;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .structure {
+        .grid {
+            align-items: center;
+
+            a {
+                font-weight: 700;
+                font-size: 1.4rem;
+                color: $light-blue;
+            }
+
+            img {
+                max-width: 10rem;
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+}
