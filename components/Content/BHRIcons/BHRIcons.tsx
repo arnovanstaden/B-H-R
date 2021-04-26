@@ -4,7 +4,7 @@ import ClassNames from "classnames"
 import styles from "./bhr-icons.module.scss";
 
 interface IProps {
-    left: boolean;
+    left?: boolean;
 }
 
 const BHRIcons = ({ left }: IProps) => {

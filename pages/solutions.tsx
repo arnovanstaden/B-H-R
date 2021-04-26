@@ -4,6 +4,7 @@ import Hero from "../components/UI/Page/Hero/Hero";
 import AreasOfWork from "../components/Content/AreasOfWork/AreasOfWork"
 import BHRIcons from "../components/Content/BHRIcons/BHRIcons"
 import NextImage from "../components/NextImage/NextImage"
+import PageNav from "../components/UI/Page/PageNav/PageNav"
 
 // MUI
 import Container from "@material-ui/core/Container";
@@ -25,10 +26,22 @@ const solutions = () => {
 
             <Hero
                 title="Industry Solutions"
+                alt="BHR Solutions Hero"
+                src="/images/pages/solutions/hero.webp"
+            />
+
+            <PageNav
+                links={{
+                    industries: "Industries",
+                    approach: "Our Approach",
+                    structure: "Operations Structure",
+                    areas: "Areas of Work"
+                }}
+                page="solutions"
             />
 
             <Container >
-                <section className={styles.intro}>
+                <section className={styles.intro} id="industries">
                     <div className="heading">
                         <h1>Industries</h1>
                         <h2>Our solutions across the building, hospitality and retail industries helps to save energy, reduce costs, improve operational longevity and increase our client’s operator and customer comfort.</h2>
@@ -38,7 +51,7 @@ const solutions = () => {
 
             </Container>
 
-            <section className={styles.approach}>
+            <section className={styles.approach} id="approach">
                 <Container>
 
                     <Grid container spacing={5}>
@@ -66,7 +79,7 @@ const solutions = () => {
 
             <Container>
 
-                <section className={styles.structure}>
+                <section className={styles.structure} id="structure">
                     <div className="heading">
                         <h1>Operations Structure</h1>
                         <h2>BHR’s operations is built upon a broad portfolio of focus areas for a complete solution.</h2>
@@ -134,7 +147,7 @@ const solutions = () => {
                 </section>
 
 
-                <section className={styles.areas}>
+                <section className={styles.areas} id="areas">
                     <AreasOfWork />
                 </section>
 

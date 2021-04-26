@@ -23,15 +23,17 @@ const about = () => {
         >
             <TextIntro title="Our Company" />
 
-            <PageNav>
-                <a href="/about#about" className={styles.active}>About us</a>
-                <a href="/about#mission">Our Mission</a>
-                <a href="/about#values">What Matters To us</a>
-            </PageNav>
+            <PageNav
+                links={{
+                    about: "About Us",
+                    mission: "Our Mission",
+                    values: "What Matters To us",
+                }}
+                page="about"
+            />
 
             <Container>
-
-                <section className={styles.intro}>
+                <section className={styles.intro} id="about">
                     <Grid container className={styles.text}>
                         <Grid item xs={12} sm={5}>
                             <h1>About Us</h1>

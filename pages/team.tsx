@@ -25,14 +25,20 @@ const team = () => {
 
             <Hero
                 title="Our Team"
+                alt="BHR Team Hero"
+                src="/images/pages/team/hero.webp"
             />
 
-            <PageNav>
-                <a href="/team#training" className={styles.active}>Training and Development</a>
-                <a href="/team#inclusion">Inclusion and Diversity</a>
-                <a href="/team#expertise">BHR Team Expertise</a>
-                <a href="/team#structure">Operational Structure</a>
-            </PageNav>
+            <PageNav
+                links={{
+                    training: "Training and Development",
+                    inclusion: "Inclusion and Diversity",
+                    expertise: "BHR Team Expertise",
+                    structure: "Operational Structure",
+                }}
+                page="team"
+                />
+  
 
             <Container >
                 <section className={styles.intro}>

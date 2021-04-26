@@ -2,6 +2,7 @@
 import Page from "../components/UI/Page/Page";
 import Hero from "../components/UI/Page/Hero/Hero";
 import NextImage from "../components/NextImage/NextImage"
+import PageNav from "../components/UI/Page/PageNav/PageNav"
 
 // MUI
 import Container from "@material-ui/core/Container";
@@ -23,7 +24,23 @@ const services = () => {
 
             <Hero
                 title="Services"
+                alt="BHR Services Hero"
+                src="/images/pages/services/hero.webp"
             />
+
+            <PageNav
+                links={{
+                    design: "Design",
+                    mechanical: "Mechanical",
+                    electrical: "Electrical",
+                    fire: "Fire",
+                    plumbing: "Plumbing",
+                    sanitisation: "Sanitisation"
+                }}
+                page="services"
+            />
+
+
 
             <Container >
                 <section className={styles.intro}>
@@ -38,7 +55,7 @@ const services = () => {
                 <section className={styles.grid}>
                     <h1>Areas of Work - Services</h1>
 
-                    <Grid container spacing={5} className={styles.row}>
+                    <Grid container spacing={5} className={styles.row} id="design">
                         <Grid item md={6}>
                             <div className={styles.image}>
                                 <NextImage
@@ -56,7 +73,7 @@ const services = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid container spacing={5} className={styles.row}>
+                    <Grid container spacing={5} className={styles.row} id="mechanical">
                         <Grid item md={6}>
                             <div className={styles.text}>
                                 <img src="/images/icons/services/mechanical.svg" alt="" />
@@ -78,7 +95,7 @@ const services = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid container spacing={5} className={styles.row}>
+                    <Grid container spacing={5} className={styles.row} id="electrical">
                         <Grid item md={6}>
                             <div className={styles.image}>
                                 <NextImage
@@ -101,7 +118,7 @@ const services = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid container spacing={5} className={styles.row}>
+                    <Grid container spacing={5} className={styles.row} id="fire">
                         <Grid item md={6}>
                             <div className={styles.text}>
                                 <img src="/images/icons/services/fire-safety.svg" alt="" />
@@ -119,7 +136,7 @@ const services = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid container spacing={5} className={styles.row}>
+                    <Grid container spacing={5} className={styles.row} id="plumbing">
                         <Grid item md={6}>
                             <div className={styles.image}>
                                 <NextImage
@@ -141,7 +158,7 @@ const services = () => {
                     </Grid>
 
 
-                    <Grid container spacing={5} className={styles.row}>
+                    <Grid container spacing={5} className={styles.row} id="sanitisation">
                         <Grid item md={6}>
                             <div className={styles.text}>
                                 <img src="/images/icons/services/sanitisation.svg" alt="" />

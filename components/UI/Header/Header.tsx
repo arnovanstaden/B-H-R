@@ -1,9 +1,13 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import { useRouter } from "next/router";
+
 
 // Styles & Media
 import styles from "./header.module.scss";
 
 const Header = () => {
+    const router = useRouter();
+
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
@@ -14,7 +18,7 @@ const Header = () => {
                 </div>
                 <div className={styles.menu}>
                     <ul className={styles.social}>
-                        <li>
+                        <li >
                             <a href="https://www.facebook.com/bhrsolutions" target="blank">
                                 <i className="icon-facebook"></i>
                             </a>
@@ -31,32 +35,32 @@ const Header = () => {
                         </li>
                     </ul>
                     <ul className={styles.links}>
-                        <li>
+                        <li className={router.pathname == "/about" ? styles.active : ""}>
                             <Link href="/about">
                                 Our Company
                                 </Link>
                         </li>
-                        <li>
+                        <li className={router.pathname == "/solutions" ? styles.active : ""}>
                             <Link href="/solutions">
                                 Industry Solutions
                                 </Link>
                         </li>
-                        <li>
+                        <li className={router.pathname == "/services" ? styles.active : ""}>
                             <Link href="/services">
                                 Services
                                 </Link>
                         </li>
-                        <li>
+                        <li className={router.pathname == "/team" ? styles.active : ""}>
                             <Link href="/team">
                                 Our Team
                                 </Link>
                         </li>
-                        <li>
+                        <li className={router.pathname == "/projects" ? styles.active : ""}>
                             <Link href="/projects">
                                 Projects
                                 </Link>
                         </li>
-                        <li>
+                        <li className={router.pathname == "/contact" ? styles.active : ""}>
                             <Link href="/contact">
                                 Contact Us
                                 </Link>

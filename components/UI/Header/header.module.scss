@@ -53,14 +53,24 @@
                 }
 
                 &.links {
-                    a {
-                        color: $dark-blue;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        font-size: 0.9rem;
 
-                        &:hover {
-                            color: $light-blue;
+                    li {
+
+                        &.active {
+                            a {
+                                color: $light-blue;
+                            }
+                        }
+
+                        a {
+                            color: $dark-blue;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            font-size: 0.9rem;
+
+                            &:hover {
+                                color: $light-blue;
+                            }
                         }
                     }
                 }

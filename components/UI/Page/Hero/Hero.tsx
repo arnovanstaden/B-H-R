@@ -1,4 +1,4 @@
-import Image from "next/image"
+import { Parallax } from "react-parallax";
 
 // MUI
 import Container from "@material-ui/core/Container";
@@ -9,22 +9,25 @@ import styles from "./hero.module.scss";
 interface IProps {
     title: string;
     subtitle?: string;
-    image?: string;
+    src: string;
+    alt: string;
 }
 
-const Hero = ({ title, subtitle, image }: IProps) => {
+const Hero = ({ title, subtitle, src, alt }: IProps) => {
     return (
-        <section className={styles.hero}>
-            <div className={styles.overlay}>
-                <div className={styles.gradient}></div>
-            </div>
-            <div className={styles.text}>
-                <Container>
-                    {subtitle ? <h4>{subtitle}</h4> : null}
-                    <h1>{title}</h1>
-                </Container>
-            </div>
-        </section>
+        <Parallax strength={250} bgImage={src} bgImageAlt={alt}>
+            <section className={styles.hero}>
+                <div className={styles.overlay}>
+                    <div className={styles.gradient}></div>
+                </div>
+                <div className={styles.text}>
+                    <Container>
+                        {subtitle ? <h4>{subtitle}</h4> : null}
+                        <h1>{title}</h1>
+                    </Container>
+                </div>
+            </section>
+        </Parallax>
     )
 }
 
