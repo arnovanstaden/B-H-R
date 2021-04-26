@@ -122,41 +122,49 @@ const about = () => {
                 <section id="values" className={styles.values}>
                     <h1>What Matters To Us</h1>
                     <Grid container spacing={5}>
-                        <Grid item xs={12} sm={6} className={styles.item}>
-                            <h2>People</h2>
-                            <p>
-                                Donec fringilla porttitor velit, vitae
-                                facilisis neque rutrum at. Etiam
-                                ligula justo, elementum nec dolor in,
-                                pharetra sagittis tortor.
+                        <Grid item xs={12} sm={6}>
+                            <div className={styles.item}>
+                                <h2>People</h2>
+                                <p>
+                                    Donec fringilla porttitor velit, vitae
+                                    facilisis neque rutrum at. Etiam
+                                    ligula justo, elementum nec dolor in,
+                                    pharetra sagittis tortor.
                                 </p>
+                            </div>
                         </Grid>
-                        <Grid item xs={12} sm={6} className={styles.item}>
-                            <h2>Partnership</h2>
-                            <p>
-                                Donec fringilla porttitor velit, vitae
-                                facilisis neque rutrum at. Etiam
-                                ligula justo, elementum nec dolor in,
-                                pharetra sagittis tortor.
+                        <Grid item xs={12} sm={6}>
+                            <div className={styles.item}>
+                                <h2>Partnership</h2>
+                                <p>
+                                    Donec fringilla porttitor velit, vitae
+                                    facilisis neque rutrum at. Etiam
+                                    ligula justo, elementum nec dolor in,
+                                    pharetra sagittis tortor.
                                 </p>
+                            </div>
                         </Grid>
-                        <Grid item xs={12} sm={6} className={styles.item}>
-                            <h2>Technology</h2>
-                            <p>
-                                Donec fringilla porttitor velit, vitae
-                                facilisis neque rutrum at. Etiam
-                                ligula justo, elementum nec dolor in,
-                                pharetra sagittis tortor.
+                        <Grid item xs={12} sm={6}>
+                            <div className={styles.item}>
+                                <h2>Technology</h2>
+                                <p>
+                                    Donec fringilla porttitor velit, vitae
+                                    facilisis neque rutrum at. Etiam
+                                    ligula justo, elementum nec dolor in,
+                                    pharetra sagittis tortor.
                                 </p>
+                            </div>
                         </Grid>
-                        <Grid item xs={12} sm={6} className={styles.item}>
-                            <h2>Delivery</h2>
-                            <p>
-                                Donec fringilla porttitor velit, vitae
-                                facilisis neque rutrum at. Etiam
-                                ligula justo, elementum nec dolor in,
-                                pharetra sagittis tortor.
+                        <Grid item xs={12} sm={6}>
+                            <div className={styles.item}>
+                                <h2>Delivery</h2>
+                                <p>
+                                    Donec fringilla porttitor velit, vitae
+                                    facilisis neque rutrum at. Etiam
+                                    ligula justo, elementum nec dolor in,
+                                    pharetra sagittis tortor.
                                 </p>
+                            </div>
                         </Grid>
                     </Grid>
                 </section>

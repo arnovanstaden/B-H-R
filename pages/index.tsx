@@ -50,29 +50,33 @@ export default function Home() {
             <h2>We pride ourselves on being a one-stop shop that is able to meet our client’s needs. Our goal is to privide a high quality customer service. We understand that time and cost are crucial so we strive to go above and beyond our client’s expectations.</h2>
           </div>
           <Grid container spacing={5}>
-            <Grid item xs={12} sm={6} className={`${styles.contentBlock} ${styles.solutions}`}>
-              <div className={styles.text}>
-                <h2>Industry Solutions</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
-                <a href="/solutions" className="button">Discover</a>
+            <Grid item sm={12} md={6} >
+              <div className={`${styles.contentBlock} ${styles.solutions}`}>
+                <div className={styles.text}>
+                  <h2>Industry Solutions</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <a href="/solutions" className="button">Discover</a>
+                </div>
+                <BHRIcons />
               </div>
-              <BHRIcons />
             </Grid>
-            <Grid item xs={12} sm={6} className={`${styles.contentBlock} ${styles.services}`} id="#servicesBlock">
-              <div className={styles.text}>
-                <h2>Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
-                <a href="/services" className="button button--hover-white">Discover</a>
-              </div>
-              <div className={styles.overlay}></div>
-              <div className={styles.image}>
-                <div className="next-image-container">
-                  <Image
-                    src="/images/pages/home/services.jpg"
-                    alt="Picture of BHR HVC Maintenance"
-                    layout="fill"
-                    className="next-image"
-                  />
+            <Grid item sm={12} md={6} >
+              <div className={`${styles.contentBlock} ${styles.services}`} id="#servicesBlock">
+                <div className={styles.text}>
+                  <h2>Services</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <a href="/services" className="button button--hover-white">Discover</a>
+                </div>
+                <div className={styles.overlay}></div>
+                <div className={styles.image}>
+                  <div className="next-image-container">
+                    <Image
+                      src="/images/pages/home/services.jpg"
+                      alt="Picture of BHR HVC Maintenance"
+                      layout="fill"
+                      className="next-image"
+                    />
+                  </div>
                 </div>
               </div>
             </Grid>
@@ -88,7 +92,7 @@ export default function Home() {
             <p>Above all we are a trusted advocate to our clients in the HVAC and Mechanical Industry.</p>
           </div>
           <Grid container spacing={5}>
-            <Grid item sm={4} >
+            <Grid item xs={12} md={4} >
               <div className={styles.value}>
                 <h5>Sustainabilty</h5>
                 <p>
@@ -96,7 +100,7 @@ export default function Home() {
                 </p>
               </div>
             </Grid>
-            <Grid item sm={4} >
+            <Grid item xs={12} md={4} >
               <div className={styles.value}>
                 <h5>Compliance</h5>
                 <p>
@@ -104,7 +108,7 @@ export default function Home() {
               </p>
               </div>
             </Grid>
-            <Grid item sm={4}>
+            <Grid item xs={12} md={4}>
               <div className={styles.value}>
                 <h5>Support</h5>
                 <p>
@@ -120,56 +124,62 @@ export default function Home() {
 
           <AreasOfWork />
 
-          <Grid container>
-            <Grid item xs={12} sm={6} className={`${styles.contentBlock} ${styles.sanitisation}`}
+          <Grid container spacing={5}>
+            <Grid item md={6}
               style={{ minHeight: blockHeight }}
             >
-              <div className={styles.text}>
-                <h2>Sanitisation</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
-                <a href="/solutions" className="button button--hover-white">Discover</a>
-              </div>
-              <div className={styles.overlay}></div>
-              <div className={styles.image}>
-                <div className="next-image-container">
-                  <Image
-                    src="/images/pages/home/sanitisation.jpg"
-                    alt="Picture of BHR HVC Maintenance"
-                    layout="fill"
-                    className="next-image"
-                  />
+              <div className={`${styles.contentBlock} ${styles.sanitisation}`}>
+                <div className={styles.text}>
+                  <h2>Sanitisation</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <a href="/solutions" className="button button--hover-white">Discover</a>
+                </div>
+                <div className={styles.overlay}></div>
+                <div className={styles.image}>
+                  <div className="next-image-container">
+                    <Image
+                      src="/images/pages/home/sanitisation.jpg"
+                      alt="Picture of BHR HVC Maintenance"
+                      layout="fill"
+                      className="next-image"
+                    />
+                  </div>
                 </div>
               </div>
             </Grid>
-            <Grid item xs={12} sm={6} className={`${styles.contentBlock} ${styles.team}`}
+            <Grid item md={6}
               style={{ minHeight: blockHeight }}
             >
-              <div className={styles.text}>
-                <h2>Our Team</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
-                <a href="/services" className="button button--hover-white">Discover</a>
-              </div>
-              <div className={styles.image}>
-                <div className="next-image-container">
-                  <Image
-                    src="/images/pages/home/team.jpg"
-                    alt="Picture of BHR HVC Maintenance"
-                    layout="fill"
-                    className="next-image"
-                  />
+              <div className={`${styles.contentBlock} ${styles.team}`}>
+                <div className={styles.text}>
+                  <h2>Our Team</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <a href="/services" className="button button--hover-white">Discover</a>
+                </div>
+                <div className={styles.image}>
+                  <div className="next-image-container">
+                    <Image
+                      src="/images/pages/home/team.jpg"
+                      alt="Picture of BHR HVC Maintenance"
+                      layout="fill"
+                      className="next-image"
+                    />
+                  </div>
                 </div>
               </div>
             </Grid>
           </Grid>
 
           <Grid container className={styles.projects}>
-            <Grid item xs={12} sm={6} className={styles.contentBlock}
+            <Grid item md={6}
               style={{ minHeight: blockHeight }}
             >
-              <div className={styles.text}>
-                <h2>Projects</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
-                <a href="/solutions" className="button button--dark">Discover</a>
+              <div className={styles.contentBlock}>
+                <div className={styles.text}>
+                  <h2>Projects</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <a href="/solutions" className="button button--dark">Discover</a>
+                </div>
               </div>
             </Grid>
             <Grid item xs={12} sm={6} className={styles.contentBlock}
