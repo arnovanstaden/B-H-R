@@ -55,127 +55,138 @@ const services = () => {
                 <section className={styles.grid}>
                     <h1>Areas of Work - Services</h1>
 
-                    <Grid container spacing={5} className={styles.row} id="design">
-                        <Grid item md={6}>
-                            <div className={styles.image}>
-                                <NextImage
-                                    src="/images/pages/services/design.jpg"
-                                    alt="BHR Service - Design"
-                                />
-                            </div>
+                    <div className={styles.row} id="design">
+                        <Grid container spacing={5}>
+                            <Grid item md={6}>
+                                <div className={styles.image}>
+                                    <NextImage
+                                        src="/images/pages/services/design.jpg"
+                                        alt="BHR Service - Design"
+                                    />
+                                </div>
+                            </Grid>
+                            <Grid item md={6}>
+                                <div className={styles.text}>
+                                    <img src="/images/icons/services/design.svg" alt="" />
+                                    <h2>Design</h2>
+                                    <p>We are an approach driven company breaking down large projects to suit and adapt to the client’s needs.</p>
+                                </div>
+                            </Grid>
                         </Grid>
-                        <Grid item md={6}>
-                            <div className={styles.text}>
-                                <img src="/images/icons/services/design.svg" alt="" />
-                                <h2>Design</h2>
-                                <p>We are an approach driven company breaking down large projects to suit and adapt to the client’s needs.</p>
-                            </div>
-                        </Grid>
-                    </Grid>
+                    </div>
 
-                    <Grid container spacing={5} className={styles.row} id="mechanical">
-                        <Grid item md={6}>
-                            <div className={styles.text}>
-                                <img src="/images/icons/services/mechanical.svg" alt="" />
-                                <h2>Mechanical</h2>
-                                <ul>
-                                    <li>AC</li>
-                                    <li>Ventilation</li>
-                                    <li>Refrigeration</li>
-                                </ul>
-                            </div>
+                    <div className={styles.row} id="mechanical">
+                        <Grid container spacing={5} >
+                            <Grid item md={6}>
+                                <div className={styles.text}>
+                                    <img src="/images/icons/services/mechanical.svg" alt="" />
+                                    <h2>Mechanical</h2>
+                                    <ul>
+                                        <li>AC</li>
+                                        <li>Ventilation</li>
+                                        <li>Refrigeration</li>
+                                    </ul>
+                                </div>
+                            </Grid>
+                            <Grid item md={6}>
+                                <div className={styles.image}>
+                                    <NextImage
+                                        src="/images/pages/services/mechanical.jpg"
+                                        alt="BHR Service - Mechanical"
+                                    />
+                                </div>
+                            </Grid>
                         </Grid>
-                        <Grid item md={6}>
-                            <div className={styles.image}>
-                                <NextImage
-                                    src="/images/pages/services/mechanical.jpg"
-                                    alt="BHR Service - Mechanical"
-                                />
-                            </div>
-                        </Grid>
-                    </Grid>
+                    </div>
 
-                    <Grid container spacing={5} className={styles.row} id="electrical">
-                        <Grid item md={6}>
-                            <div className={styles.image}>
-                                <NextImage
-                                    src="/images/pages/services/electrical.jpg"
-                                    alt="BHR Service - Electrical"
-                                />
-                            </div>
-                        </Grid>
-                        <Grid item md={6}>
-                            <div className={styles.text}>
-                                <img src="/images/icons/services/electrical.svg" alt="" />
-                                <h2>Electrical</h2>
-                                <ul>
-                                    <li>Single phase</li>
-                                    <li>Three phase</li>
-                                    <li>Commercial</li>
-                                    <li>Residential</li>
-                                </ul>
-                            </div>
-                        </Grid>
-                    </Grid>
+                    <div className={styles.row} id="electrical">
 
-                    <Grid container spacing={5} className={styles.row} id="fire">
-                        <Grid item md={6}>
-                            <div className={styles.text}>
-                                <img src="/images/icons/services/fire-safety.svg" alt="" />
-                                <h2>Fire and Safety</h2>
-                                <p>Fire safety and protection systems</p>
-                            </div>
+                        <Grid container spacing={5}>
+                            <Grid item md={6}>
+                                <div className={styles.image}>
+                                    <NextImage
+                                        src="/images/pages/services/electrical.jpg"
+                                        alt="BHR Service - Electrical"
+                                    />
+                                </div>
+                            </Grid>
+                            <Grid item md={6}>
+                                <div className={styles.text}>
+                                    <img src="/images/icons/services/electrical.svg" alt="" />
+                                    <h2>Electrical</h2>
+                                    <ul>
+                                        <li>Single phase</li>
+                                        <li>Three phase</li>
+                                        <li>Commercial</li>
+                                        <li>Residential</li>
+                                    </ul>
+                                </div>
+                            </Grid>
                         </Grid>
-                        <Grid item md={6}>
-                            <div className={styles.image}>
-                                <NextImage
-                                    src="/images/pages/services/fire-safety.jpg"
-                                    alt="BHR Service - Fire and Safety"
-                                />
-                            </div>
-                        </Grid>
-                    </Grid>
+                    </div>
 
-                    <Grid container spacing={5} className={styles.row} id="plumbing">
-                        <Grid item md={6}>
-                            <div className={styles.image}>
-                                <NextImage
-                                    src="/images/pages/services/plumbing.jpg"
-                                    alt="BHR Service - Plumbing"
-                                />
-                            </div>
+                    <div className={styles.row} id="fire">
+                        <Grid container spacing={5}>
+                            <Grid item md={6}>
+                                <div className={styles.text}>
+                                    <img src="/images/icons/services/fire-safety.svg" alt="" />
+                                    <h2>Fire and Safety</h2>
+                                    <p>Fire safety and protection systems</p>
+                                </div>
+                            </Grid>
+                            <Grid item md={6}>
+                                <div className={styles.image}>
+                                    <NextImage
+                                        src="/images/pages/services/fire-safety.jpg"
+                                        alt="BHR Service - Fire and Safety"
+                                    />
+                                </div>
+                            </Grid>
                         </Grid>
-                        <Grid item md={6}>
-                            <div className={styles.text}>
-                                <img src="/images/icons/services/plumbing.svg" alt="" />
-                                <h2>Plumbing</h2>
-                                <ul>
-                                    <li>Heat pumps</li>
-                                    <li>Plumbing systems that conveys fluids</li>
-                                </ul>
-                            </div>
-                        </Grid>
-                    </Grid>
+                    </div>
 
-
-                    <Grid container spacing={5} className={styles.row} id="sanitisation">
-                        <Grid item md={6}>
-                            <div className={styles.text}>
-                                <img src="/images/icons/services/sanitisation.svg" alt="" />
-                                <h2>Sanitisation</h2>
-                                <p>Reducing the number of bacteria to safe levels without compromising the safety of the customer.</p>
-                            </div>
+                    <div className={styles.row} id="plumbing">
+                        <Grid container spacing={5} >
+                            <Grid item md={6}>
+                                <div className={styles.image}>
+                                    <NextImage
+                                        src="/images/pages/services/plumbing.jpg"
+                                        alt="BHR Service - Plumbing"
+                                    />
+                                </div>
+                            </Grid>
+                            <Grid item md={6}>
+                                <div className={styles.text}>
+                                    <img src="/images/icons/services/plumbing.svg" alt="" />
+                                    <h2>Plumbing</h2>
+                                    <ul>
+                                        <li>Heat pumps</li>
+                                        <li>Plumbing systems that conveys fluids</li>
+                                    </ul>
+                                </div>
+                            </Grid>
                         </Grid>
-                        <Grid item md={6}>
-                            <div className={styles.image}>
-                                <NextImage
-                                    src="/images/pages/services/sanitisation.jpg"
-                                    alt="BHR Service - Sanitisation"
-                                />
-                            </div>
-                        </Grid>
-                    </Grid>
+                    </div>
 
+                    <div className={styles.row} id="sanitisation">
+                        <Grid container spacing={5} >
+                            <Grid item md={6}>
+                                <div className={styles.text}>
+                                    <img src="/images/icons/services/sanitisation.svg" alt="" />
+                                    <h2>Sanitisation</h2>
+                                    <p>Reducing the number of bacteria to safe levels without compromising the safety of the customer.</p>
+                                </div>
+                            </Grid>
+                            <Grid item md={6}>
+                                <div className={styles.image}>
+                                    <NextImage
+                                        src="/images/pages/services/sanitisation.jpg"
+                                        alt="BHR Service - Sanitisation"
+                                    />
+                                </div>
+                            </Grid>
+                        </Grid>
+                    </div>
                 </section>
 
             </Container>
