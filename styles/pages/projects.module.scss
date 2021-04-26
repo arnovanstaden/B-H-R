@@ -6,11 +6,12 @@
         h1 {
             font-size: 1.5rem;
         }
-    }
 
+    }
 
     .grid {
         border-top: 1px solid $light-grey;
+        border-bottom: 1px solid $light-grey;
 
         .project {
             cursor: pointer;
@@ -34,15 +35,21 @@
                 left: 0;
                 width: 100%;
                 box-sizing: border-box;
-                padding: 0 1rem;
+                padding: 0 1rem 1rem 1rem;
                 z-index: 5;
+                transition: 0.3s ease-in-out;
+
 
                 h3 {
                     margin: 0;
-                    padding: 1rem 0;
+                    padding: 1rem 0 0 0;
                     border-top: 2px solid $light-blue;
                     color: white;
-                    transition: 0.3s ease-in-out;
+                }
+
+                small {
+                    color: $white;
+                    font-weight: 500;
                 }
             }
 
@@ -53,9 +60,7 @@
                 }
 
                 .text {
-                    h3 {
-                        padding-bottom: 1.25rem;
-                    }
+                    padding-bottom: 1.5rem;
                 }
             }
         }

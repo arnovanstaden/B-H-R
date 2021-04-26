@@ -16,4 +16,58 @@
         "Repair",
         "Sanitisation"
     ]
+}, {
+    "name": "Name of Project 2",
+    "focus": "Focus area of project",
+    "description": "A short overview/summary description of project. Phasellus sagittis vel mauris nec pretium. In gravida, nisl eget mattis eleifend, massa tellus dapibus est, quis malesuada nisl augue ut ligula. Pellentesque fermentum rhoncus leo, in elementum nibh scelerisque sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "client": "Name of client and site",
+    "serviceProvider": "BHR Solutions",
+    "workAreas": ["Design",
+        "Mechanical",
+        "Electrical",
+        "Fire",
+        "Plumbing"
+    ],
+    "serviceAreas": [
+        "Service",
+        "Maintenance",
+        "Repair",
+        "Sanitisation"
+    ]
+}, {
+    "name": "Name of Project 3",
+    "focus": "Focus area of project",
+    "description": "A short overview/summary description of project. Phasellus sagittis vel mauris nec pretium. In gravida, nisl eget mattis eleifend, massa tellus dapibus est, quis malesuada nisl augue ut ligula. Pellentesque fermentum rhoncus leo, in elementum nibh scelerisque sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "client": "Name of client and site",
+    "serviceProvider": "BHR Solutions",
+    "workAreas": ["Design",
+        "Mechanical",
+        "Electrical",
+        "Fire",
+        "Plumbing"
+    ],
+    "serviceAreas": [
+        "Service",
+        "Maintenance",
+        "Repair",
+        "Sanitisation"
+    ]
+}, {
+    "name": "Name of Project 4",
+    "focus": "Focus area of project",
+    "description": "A short overview/summary description of project. Phasellus sagittis vel mauris nec pretium. In gravida, nisl eget mattis eleifend, massa tellus dapibus est, quis malesuada nisl augue ut ligula. Pellentesque fermentum rhoncus leo, in elementum nibh scelerisque sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "client": "Name of client and site",
+    "serviceProvider": "BHR Solutions",
+    "workAreas": ["Design",
+        "Mechanical",
+        "Electrical",
+        "Fire",
+        "Plumbing"
+    ],
+    "serviceAreas": [
+        "Service",
+        "Maintenance",
+        "Repair",
+        "Sanitisation"
+    ]
 }]

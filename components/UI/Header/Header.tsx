@@ -1,6 +1,4 @@
 import Link from 'next/link'
-// MUI
-import Container from "@material-ui/core/Container";
 
 // Styles & Media
 import styles from "./header.module.scss";
@@ -11,7 +9,7 @@ const Header = () => {
             <nav className={styles.nav}>
                 <div className={styles.logo}>
                     <Link href="/">
-                        <img src="/images/logos/nav.png" alt="BHR Logo" />
+                        <img src="/images/logos/navbar-logo.svg" alt="BHR Logo" />
                     </Link>
                 </div>
                 <div className={styles.menu}>

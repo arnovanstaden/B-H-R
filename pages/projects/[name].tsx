@@ -17,7 +17,8 @@ import styles from '../../styles/pages/projects/[name].module.scss';
 
 const Project = ({ project }) => {
 
-    const imagePath = `/images/pages/projects/${project.name.replace(/ /g, "-").toLowerCase()}`
+    const imagePath = `/images/pages/projects/${project.name.replace(/ /g, "-").toLowerCase()}`;
+
     return (
         <Page
             className={styles.project}

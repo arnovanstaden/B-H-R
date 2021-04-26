@@ -1,4 +1,7 @@
-import Link from "next/link"
+import Link from "next/link";
+
+// Data
+import projectData from "../assets/data/projects.json";
 
 // Components
 import Page from "../components/UI/Page/Page";
@@ -12,20 +15,24 @@ import Grid from "@material-ui/core/Grid";
 // Styles
 import styles from '../styles/pages/projects.module.scss';
 
-const projects = () => {
-
+const projects = ({ allProjects }) => {
     // Subcomponents
     const Project = (project) => {
+        const dashName = project.name.replace(/ /g, "-").toLowerCase();
+        const linkPath = `/projects/${dashName}`
+        const imagePath = `/images/pages/projects/${dashName}`
+
         return (
             <Grid item md={6}>
-                <Link href="/projects/name-of-project">
+                <Link href={linkPath}>
                     <a className={styles.project}>
                         <div className={styles.image}>
-                            <NextImage src="/images/pages/projects/project1.jpg" alt="BHR Project" />
+                            <NextImage src={`${imagePath}/thumbnail.jpg`} alt="BHR Project" />
                         </div>
                         <div className={styles.overlay}></div>
                         <div className={styles.text}>
-                            <h3>Project Name</h3>
+                            <h3>{project.name}</h3>
+                            <small>{project.focus}</small>
                         </div>
                     </a>
                 </Link>
@@ -55,8 +62,9 @@ const projects = () => {
                     <h1>Featured Projects</h1>
 
                     <Grid container spacing={5}>
-                        <Project />
-                        <Project />
+                        {allProjects.map((project, index) => (
+                            <Project key={index} {...project} />
+                        ))}
                     </Grid>
                 </section>
 
@@ -72,3 +80,13 @@ const projects = () => {
 }
 
 export default projects
+
+export async function getStaticProps({ params }) {
+
+    // const imageCount = getFileCount(project);
+    return {
+        props: {
+            allProjects: projectData,
+        }
+    }
+}
