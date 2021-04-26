@@ -2,6 +2,7 @@
 import Page from "../components/UI/Page/Page";
 import Hero from "../components/UI/Page/Hero/Hero";
 import NextImage from "../components/NextImage/NextImage"
+import PageNav from "../components/UI/Page/PageNav/PageNav"
 
 // MUI
 import Container from "@material-ui/core/Container";
@@ -26,6 +27,13 @@ const team = () => {
                 title="Our Team"
             />
 
+            <PageNav>
+                <a href="/team#training" className={styles.active}>Training and Development</a>
+                <a href="/team#inclusion">Inclusion and Diversity</a>
+                <a href="/team#expertise">BHR Team Expertise</a>
+                <a href="/team#structure">Operational Structure</a>
+            </PageNav>
+
             <Container >
                 <section className={styles.intro}>
                     <div className="heading">
@@ -35,7 +43,7 @@ const team = () => {
                     </div>
                 </section>
 
-                <section className={styles.training}>
+                <section className={styles.training} id="training">
                     <h1>Training and Development</h1>
                     <p>Through training and development we equip our personnel to make the right decisions for the long-term success of our clients and our business.</p>
                     <NextImage src="/images/pages/team/training1.jpg" alt="BHR Training and Development" />
@@ -64,7 +72,7 @@ const team = () => {
                     </Grid>
                 </section>
 
-                <section className={styles.inclusion}>
+                <section className={styles.inclusion} id="inclusion">
                     <h1>Inclusion and Diversity</h1>
                     <p>
                         At BHR we create an environment where people of all backgrounds can come
@@ -112,7 +120,7 @@ const team = () => {
                     </Grid>
                 </section>
 
-                <section className={styles.expertise}>
+                <section className={styles.expertise} id="expertise">
                     <h1>BHR Team Expertise</h1>
 
                     <Grid container className={styles.quoteGrid} spacing={5}>
@@ -174,7 +182,7 @@ const team = () => {
                     </Grid>
                 </section>
 
-                <section className={styles.structure}>
+                <section className={styles.structure} id="structure">
                     <h1>Operational Structure</h1>
 
                     <Grid container className={styles.grid}>
@@ -185,7 +193,7 @@ const team = () => {
                         </Grid>
                         <Grid item md={6}>
                             <div className={styles.image}>
-                            <img src="/images/pages/team/structure.svg" alt=""/>
+                                <img src="/images/pages/team/structure.svg" alt=""/>
                             </div>
                         </Grid>
                     </Grid>

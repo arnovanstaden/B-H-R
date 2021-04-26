@@ -14,6 +14,7 @@ const PageNotFound = () => {
                 canonical: "/",
                 robots: false
             }}
+            contact={false}
         >
 
         </Page>

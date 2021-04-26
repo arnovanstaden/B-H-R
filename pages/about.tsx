@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 // Components
 import Page from "../components/UI/Page/Page";
 import TextIntro from "../components/UI/Page/TextIntro/TextIntro";
