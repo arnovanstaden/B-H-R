@@ -33,7 +33,7 @@ const solutions = () => {
                         <h1>Industries</h1>
                         <h2>Our solutions across the building, hospitality and retail industries helps to save energy, reduce costs, improve operational longevity and increase our client’s operator and customer comfort.</h2>
                     </div>
-                    <BHRIcons />
+                    <BHRIcons left />
                 </section>
 
             </Container>
@@ -41,7 +41,7 @@ const solutions = () => {
             <section className={styles.approach}>
                 <Container>
 
-                    <Grid container>
+                    <Grid container spacing={5}>
                         <Grid item sm={6} className={styles.text}>
                             <h1>Our Approach</h1>
                             <p>Our products and services live in public
@@ -75,50 +75,47 @@ const solutions = () => {
                     <Grid container spacing={5}>
                         <Grid item className={styles.block} sm={6}>
                             <NextImage
-                                src="/images/pages/solutions/solutions4.jpg"
+                                src="/images/pages/solutions/solutions1.jpg"
                                 alt="AMC (Annual Maintenance Contract)"
                             />
                             <div className={styles.text}>
                                 <h3>AMC (Annual Maintenance Contract)</h3>
-                                <p><span>MEFP
-                                (Mechanical, Electrical, Fire, Plumbing)</span>
-                                Service
-                                Maintenance
-                                Diagnostics
-                                Repair
-                                </p>
+                                <ul>
+                                    <li><span>MEFP
+                                (Mechanical, Electrical, Fire, Plumbing)</span></li>
+                                    <li>Service</li>
+                                    <li>Maintenance</li>
+                                    <li>Diagnostics</li>
+                                    <li>Repair</li>
+                                </ul>
                             </div>
                         </Grid>
                         <Grid item className={styles.block} sm={6}>
                             <NextImage
-                                src="/images/pages/solutions/solutions4.jpg"
+                                src="/images/pages/solutions/solutions2.jpg"
                                 alt="AMC (Annual Maintenance Contract)"
                             />
                             <div className={styles.text}>
                                 <h3>Trouble Shooting</h3>
-                                <p><span>MEFP
-                                (Mechanical, Electrical, Fire, Plumbing)</span>
-                                Service
-                                Maintenance
-                                Diagnostics
-                                Repair
-                                </p>
+                                <ul>
+                                    <li>Sanitation solutions for all HVAC industries and full HVAC networks to meet and exceed compliance requirements</li>
+                                </ul>
                             </div>
                         </Grid>
                         <Grid item className={styles.block} sm={6}>
                             <NextImage
-                                src="/images/pages/solutions/solutions4.jpg"
+                                src="/images/pages/solutions/solutions3.jpg"
                                 alt="AMC (Annual Maintenance Contract)"
                             />
                             <div className={styles.text}>
                                 <h3>Project Execution</h3>
-                                <p><span>MEFP
-                                (Mechanical, Electrical, Fire, Plumbing)</span>
-                                Service
-                                Maintenance
-                                Diagnostics
-                                Repair
-                                </p>
+                                <ul>
+                                    <li>Architectural incl interior and exterior design</li>
+                                    <li>MEFP consulting service</li>
+                                    <li>Procurement</li>
+                                    <li>Supply</li>
+                                    <li>Submission</li>
+                                </ul>
                             </div>
                         </Grid>
                         <Grid item className={styles.block} sm={6}>
@@ -128,13 +125,9 @@ const solutions = () => {
                             />
                             <div className={styles.text}>
                                 <h3>Santisation (Life and Safety)</h3>
-                                <p><span>MEFP
-                                (Mechanical, Electrical, Fire, Plumbing)</span>
-                                Service
-                                Maintenance
-                                Diagnostics
-                                Repair
-                                </p>
+                                <ul>
+                                    <li>Sanitation solutions for all HVAC industries and full HVAC networks to meet and exceed compliance requirements</li>
+                                </ul>
                             </div>
                         </Grid>
                     </Grid>

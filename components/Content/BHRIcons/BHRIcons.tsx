@@ -1,16 +1,31 @@
-import styles from "./bhr-icons.module.scss"
+import ClassNames from "classnames"
 
-const BHRIcons = () => {
+// Styles
+import styles from "./bhr-icons.module.scss";
+
+interface IProps {
+    left: boolean;
+}
+
+const BHRIcons = ({ left }: IProps) => {
+
+    const classes = ClassNames(
+        styles.icons,
+        left ? styles.left : null
+    )
+
     return (
-        <div className={styles.icons}>
+        <div className={classes}>
             <div>
                 <img src="/images/icons/building.svg" alt="" />
                 <h6>Building</h6>
             </div>
+
             <div>
                 <img src="/images/icons/hospitality.svg" alt="" />
                 <h6>Hospitality</h6>
             </div>
+
             <div>
                 <img src="/images/icons/retail.svg" alt="" />
                 <h6>Retail</h6>

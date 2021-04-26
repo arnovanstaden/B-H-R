@@ -2,6 +2,10 @@
 
 .solutions {
 
+    .intro>div {
+        padding-bottom: 0;
+    }
+
     .approach {
         background-color: rgba($color: $grey, $alpha: 0.15);
 
@@ -23,21 +27,28 @@
     }
 
     .structure {
+        border-bottom: 1px solid $light-grey;
 
         .block {
 
             .text {
                 h3 {
                     color: $light-blue;
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                 }
 
-                p {
-                    font-weight: 500;
-                    font-size: 1.1rem;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
 
-                    span {
-                        font-weight: 600;
+                    li {
+                        line-height: 1.5;
+                        font-weight: 500;
+
+                        span {
+                            font-weight: 600;
+                        }
                     }
                 }
             }

@@ -13,14 +13,27 @@
         text-align: center;
 
         h6 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             margin: 0.5rem 0 0 0;
             text-transform: uppercase;
         }
 
         img {
-            width: 7rem;
+            width: 6rem;
         }
+    }
+
+    &.left {
+        justify-content: flex-start;
+
+        >div {
+            margin-right: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        justify-content: center;
+        flex-direction: column;
     }
 }
