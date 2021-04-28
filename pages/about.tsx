@@ -57,12 +57,14 @@ const about = () => {
 
                     <Grid container className={styles.expertise} spacing={5}>
                         <Grid item xs={12} sm={6}>
-                            <NextImage
-                                src="/images/pages/about/about1.jpg"
-                                alt="BHR Aircon Cleaning"
-                                intrinsic
-                                width={600}
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src="/images/pages/about/about1.jpg"
+                                    alt="BHR Aircon Cleaning"
+                                    intrinsic
+                                    width={600}
+                                />
+                            </div>
                             <div className={styles.text}>
                                 <h2>International experience and local knowledge</h2>
                                 <p>
@@ -76,12 +78,14 @@ const about = () => {
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <NextImage
-                                src="/images/pages/about/about2.jpg"
-                                alt="BHR Welding"
-                                intrinsic
-                                width={600}
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src="/images/pages/about/about2.jpg"
+                                    alt="BHR Welding"
+                                    intrinsic
+                                    width={600}
+                                />
+                            </div>
                             <div className={styles.text}>
                                 <h2>Bringing technology and innovation to Africa</h2>
                                 <p>
@@ -129,7 +133,7 @@ const about = () => {
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>People</h2>
-                                <p>
+                                <p> <span className="rectify">1</span>
                                     Donec fringilla porttitor velit, vitae
                                     facilisis neque rutrum at. Etiam
                                     ligula justo, elementum nec dolor in,
@@ -140,7 +144,7 @@ const about = () => {
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>Partnership</h2>
-                                <p>
+                                <p> <span className="rectify">2</span>
                                     Donec fringilla porttitor velit, vitae
                                     facilisis neque rutrum at. Etiam
                                     ligula justo, elementum nec dolor in,
@@ -151,7 +155,7 @@ const about = () => {
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>Technology</h2>
-                                <p>
+                                <p> <span className="rectify">3</span>
                                     Donec fringilla porttitor velit, vitae
                                     facilisis neque rutrum at. Etiam
                                     ligula justo, elementum nec dolor in,
@@ -162,7 +166,7 @@ const about = () => {
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>Delivery</h2>
-                                <p>
+                                <p> <span className="rectify">4</span>
                                     Donec fringilla porttitor velit, vitae
                                     facilisis neque rutrum at. Etiam
                                     ligula justo, elementum nec dolor in,

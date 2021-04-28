@@ -59,7 +59,9 @@ const projects = ({ allProjects }) => {
 
             <Container>
                 <section className={styles.testimonial}>
-                    <h1>“BHR delivered top-class service, and provided solutions that saved our budget. Etiam vitae erat luctus, scelerisque leo eu, faucibus ligula.”</h1>
+                    <h1>
+                        <span className="rectify">1</span>
+                        “BHR delivered top-class service, and provided solutions that saved our budget. Etiam vitae erat luctus, scelerisque leo eu, faucibus ligula.”</h1>
                     <p>Name Surname, Designation, Company</p>
                 </section>
 
@@ -74,7 +76,9 @@ const projects = ({ allProjects }) => {
                 </section>
 
                 <section className={styles.testimonial}>
-                    <h1>“BHR delivered top-class service, and provided solutions that saved our budget. Etiam vitae erat luctus, scelerisque leo eu, faucibus ligula.”</h1>
+                    <h1>
+                        <span className="rectify">2</span>
+                        “BHR delivered top-class service, and provided solutions that saved our budget. Etiam vitae erat luctus, scelerisque leo eu, faucibus ligula.”</h1>
                     <p>Name Surname, Designation, Company</p>
                 </section>
 

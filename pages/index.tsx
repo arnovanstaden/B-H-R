@@ -60,7 +60,9 @@ export default function Home() {
               <div className={`${styles.contentBlock} ${styles.solutions}`}>
                 <div className={styles.text}>
                   <h2>Industry Solutions</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>
+                    <span className="rectify">1</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
                   <a href="/solutions" className="button">Discover</a>
                 </div>
                 <BHRIcons />
@@ -79,7 +81,9 @@ export default function Home() {
                 </div>
                 <div className={styles.text}>
                   <h2>Services</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>
+                    <span className="rectify">2</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
                   <a href="/services" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
@@ -91,7 +95,8 @@ export default function Home() {
         <section className={styles.choose}>
           <div className={styles.intro}>
             <h1>Why Choose Us</h1>
-            <p>BHR Solutions is located in Cape Town, South Africa and is a provider of high quality mechanical services and installations to the residential, commercial and industrial markets of Africa.</p>
+            <p>
+              BHR Solutions is located in Cape Town, South Africa and is a provider of high quality mechanical services and installations to the residential, commercial and industrial markets of Africa.</p>
             <p>We administrate all projects from design through to completion, <span>following on with
           maintenance programs</span>.</p>
             <p>Above all we are a trusted advocate to our clients in the HVAC and Mechanical Industry.</p>
@@ -136,7 +141,8 @@ export default function Home() {
               <div className={`${styles.contentBlock} ${styles.sanitisation}`}>
                 <div className={styles.text}>
                   <h2>Sanitisation</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>                  <span className="rectify">3</span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
                   <a href="/solutions" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
@@ -157,7 +163,8 @@ export default function Home() {
               <div className={`${styles.contentBlock} ${styles.team}`}>
                 <div className={styles.text}>
                   <h2>Our Team</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>                  <span className="rectify">4</span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
                   <a href="/services" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
@@ -180,7 +187,9 @@ export default function Home() {
               <div className={styles.contentBlock}>
                 <div className={styles.text}>
                   <h2>Projects</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>
+                    <span className="rectify">5</span>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
                   <a href="/solutions" className="button button--dark">Discover</a>
                 </div>
               </div>

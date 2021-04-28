@@ -58,6 +58,7 @@ const team = () => {
                     width={1280}
                      />
                     <small>
+                    <span className="rectify optional">1</span>
                         Image caption and description. Phasellus sagittis vel mauris nec pretium. n elementum nibh scelerisque sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                     </small>
 
@@ -66,6 +67,7 @@ const team = () => {
                             <div className={styles.initiatives}>
                                 <h3>Training and Development Initiatives</h3>
                                 <ul>
+                                <span className="rectify">2</span>
                                     <li>Lorem ipsum dolor sit amet consectetur.</li>
                                     <li>Lorem ipsum dolor sit amet consectetur.</li>
                                     <li>Lorem ipsum dolor sit amet consectetur.</li>
@@ -94,7 +96,7 @@ const team = () => {
                     </p>
 
                     <h5>
-                        BHR SOLUTIONS is a Level two B-BBEE contributor
+                        BHR SOLUTIONS is a Level two B-BBEE contributor.
                     </h5>
 
                     <Grid container spacing={5}>
@@ -114,6 +116,7 @@ const team = () => {
                                 </div>
                                 <div className={styles.text}>
                                     <p>
+                                        <span className="rectify">3</span>
                                     “Donec quis ante ut justo pharetra rhoncus sed id velit. Etiam vitae erat luctus, scelerisque leo eu, faucibus ligula.”
                                     </p>
                                 </div>
@@ -135,6 +138,7 @@ const team = () => {
                                 </div>
                                 <div className={styles.text}>
                                     <p>
+                                        <span className="rectify">4</span>
                                     “Donec quis ante ut justo pharetra rhoncus sed id velit. Etiam vitae erat luctus, scelerisque leo eu, faucibus ligula.”
                                     </p>
                                 </div>
@@ -149,6 +153,7 @@ const team = () => {
                     <Grid container className={styles.quoteGrid} spacing={5}>
                         <Grid item md={6}>
                             <div className={styles.quote}>
+                            <span className="rectify">5</span>
                                 <p>“Etiam vitae erat luctus,
                                 scelerisque leo eu, faucibus
                                 ligula. Donec quis ante ut
@@ -174,6 +179,7 @@ const team = () => {
                             <div className={styles.text}>
                                 <h5>Management</h5>
                                 <ul>
+                                    <span className="rectify">6</span>
                                     <li>Lorem ipsum dolor sit amet.</li>
                                     <li>Lorem ipsum dolor sit amet.</li>
                                     <li>Lorem ipsum dolor sit amet.</li>
@@ -186,6 +192,7 @@ const team = () => {
                             <div className={styles.text}>
                                 <h5>Administrative</h5>
                                 <ul>
+                                    <span className="rectify">7</span>
                                     <li>Lorem ipsum dolor sit amet.</li>
                                     <li>Lorem ipsum dolor sit amet.</li>
                                     <li>Lorem ipsum dolor sit amet.</li>
@@ -198,6 +205,7 @@ const team = () => {
                             <div className={styles.text}>
                                 <h5>Operational</h5>
                                 <ul>
+                                    <span className="rectify">8</span>
                                     <li>Lorem ipsum dolor sit amet.</li>
                                     <li>Lorem ipsum dolor sit amet.</li>
                                     <li>Lorem ipsum dolor sit amet.</li>
@@ -214,6 +222,7 @@ const team = () => {
 
                     <Grid container className={styles.grid}>
                         <Grid item md={6}>
+                        <span className="rectify">9</span>
                             <a href="">
                                 Download PDF
                             </a>

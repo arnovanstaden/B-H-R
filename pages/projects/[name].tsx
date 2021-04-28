@@ -81,42 +81,62 @@ const Project = ({ project }) => {
                     </Grid>
                 </section>
 
-                <section className={styles.images}>
+                <section className={styles.gallery}>
 
 
 
                     <Grid container spacing={4}>
                         <Grid item xs={12}>
-                            <NextImage
-                                src={`${imagePath}/1.jpg`}
-                                alt={`${project.name}`}
-                                intrinsic
-                                width={1280}
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src={`${imagePath}/1.jpg`}
+                                    alt={`${project.name}`}
+                                    intrinsic
+                                    width={1280}
+                                />
+                            </div>
+                            <small>
+                                <span className="rectify optional">*</span>
+                                Image caption and description. Phasellus sagittis vel mauris nec pretium. In gravida, nisl eget mattis eleifend, massa tellus dapibus est.</small>
                         </Grid>
                         <Grid item xs={12}>
-                            <NextImage
-                                src={`${imagePath}/2.jpg`}
-                                alt={`${project.name}`}
-                                intrinsic
-                                width={1280}
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src={`${imagePath}/2.jpg`}
+                                    alt={`${project.name}`}
+                                    intrinsic
+                                    width={1280}
+                                />
+                            </div>
+                            <small>
+                                <span className="rectify optional">*</span>
+                                Image caption and description. Phasellus sagittis vel mauris nec pretium. In gravida, nisl eget mattis eleifend, massa tellus dapibus est.</small>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <NextImage
-                                src={`${imagePath}/3.jpg`}
-                                alt={`${project.name}`}
-                                intrinsic
-                                width={600}
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src={`${imagePath}/3.jpg`}
+                                    alt={`${project.name}`}
+                                    intrinsic
+                                    width={600}
+                                />
+                            </div>
+                            <small>
+                                <span className="rectify optional">*</span>
+                                Image caption and description. Phasellus sagittis vel mauris nec pretium. In gravida, nisl eget mattis eleifend, massa tellus dapibus est.</small>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <NextImage
-                                src={`${imagePath}/4.jpg`}
-                                alt={`${project.name}`}
-                                intrinsic
-                                width={600}
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src={`${imagePath}/4.jpg`}
+                                    alt={`${project.name}`}
+                                    intrinsic
+                                    width={600}
+                                />
+                            </div>
+                            <small>
+                                <span className="rectify optional">*</span>
+                                Image caption and description. Phasellus sagittis vel mauris nec pretium. In gravida, nisl eget mattis eleifend, massa tellus dapibus est.</small>
                         </Grid>
                     </Grid>
                 </section>
