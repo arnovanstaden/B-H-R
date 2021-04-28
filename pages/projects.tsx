@@ -23,7 +23,7 @@ const projects = ({ allProjects }) => {
         const imagePath = `/images/pages/projects/${dashName}`
 
         return (
-            <Grid item md={6}>
+            <Grid item sm={6}>
                 <Link href={linkPath}>
                     <a className={styles.project}>
                         <div className={styles.image}>

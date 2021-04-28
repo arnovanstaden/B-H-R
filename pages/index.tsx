@@ -173,7 +173,7 @@ export default function Home() {
           </Grid>
 
           <Grid container className={styles.projects}>
-            <Grid item md={6}
+            <Grid item xs={12} md={6}
               style={{ minHeight: blockHeight }}
             >
               <div className={styles.contentBlock}>

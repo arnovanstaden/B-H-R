@@ -90,7 +90,7 @@ const team = () => {
                     </h5>
 
                     <Grid container spacing={5}>
-                        <Grid item md={6}>
+                        <Grid item xs={12} sm={6} >
                             <div className={styles.contentBlock}>
                                 <div className={styles.image}>
                                     <div className={styles.overlay}></div>
@@ -107,7 +107,7 @@ const team = () => {
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item md={6}>
+                        <Grid item xs={12} sm={6} >
                             <div className={styles.contentBlock}>
                                 <div className={styles.image}>
                                     <div className={styles.overlay}></div>

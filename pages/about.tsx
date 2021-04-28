@@ -35,10 +35,10 @@ const about = () => {
             <Container>
                 <section className={styles.intro} id="about">
                     <Grid container className={styles.text}>
-                        <Grid item xs={12} sm={5}>
+                        <Grid item xs={12} md={5}>
                             <h1>About Us</h1>
                         </Grid>
-                        <Grid item xs={12} sm={7}>
+                        <Grid item xs={12} md={7}>
                             <p>
                                 BHR Solutions is a B-BBEE compliant project,
                                 construction and MEFP (Mechanical, Electrical,
