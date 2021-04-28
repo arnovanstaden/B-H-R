@@ -143,7 +143,7 @@ export default function Home() {
                   <h2>Sanitisation</h2>
                   <p>                  <span className="rectify">3</span>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
-                  <a href="/solutions" className="button button--hover-white">Discover</a>
+                  <a href="/services#sanitisation" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
                 <div className={styles.image}>
@@ -165,7 +165,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque 
                   <h2>Our Team</h2>
                   <p>                  <span className="rectify">4</span>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
-                  <a href="/services" className="button button--hover-white">Discover</a>
+                  <a href="/team" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
                 <div className={styles.image}>
@@ -190,7 +190,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque 
                   <p>
                     <span className="rectify">5</span>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
-                  <a href="/solutions" className="button button--dark">Discover</a>
+                  <a href="/projects" className="button button--dark">Discover</a>
                 </div>
               </div>
             </Grid>

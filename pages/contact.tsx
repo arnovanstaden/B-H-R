@@ -37,7 +37,7 @@ export default function Contact() {
                                 <span>T</span>
                             +27 21 975 6376
                         </a>
-                            <a href="info@bhrsolutions.co.za">
+                            <a href="mailto:info@bhrsolutions.co.za">
                                 <span>E</span>
                             info@bhrsolutions.co.za
                         </a>
