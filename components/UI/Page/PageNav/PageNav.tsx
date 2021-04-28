@@ -35,11 +35,13 @@ const PageNav = ({ links, page }) => {
     }
 
     useEffect(() => {
-        document.addEventListener("scroll", handleNavStuck);
-        initialPos = navRef.current.getBoundingClientRect().top + document.documentElement.scrollTop;
+        if (isMobileDevice) {
+            document.addEventListener("scroll", handleNavStuck);
+            initialPos = navRef.current.getBoundingClientRect().top + document.documentElement.scrollTop;
 
-        return () => {
-            document.removeEventListener("scroll", handleNavStuck);
+            return () => {
+                document.removeEventListener("scroll", handleNavStuck);
+            }
         }
     }, [])
 
