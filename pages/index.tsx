@@ -37,7 +37,7 @@ export default function Home() {
       }}
     >
       <Hero
-        title="HVAC dolor sit amet,consectetur adipiscing elit."
+        title="HVAC dolor sit amet, consectetur adipiscing elit."
         subtitle="maintenance"
         alt="BHR Home Hero"
         src="/images/pages/home/hero.webp"

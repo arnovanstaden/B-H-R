@@ -114,8 +114,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     box-sizing: border-box;
+
+    >i {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        padding: 1rem;
+        color: $light-blue;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
 
     ul {
         list-style: none;
@@ -127,8 +137,6 @@
 
         li {
             margin-left: 1rem;
-
-
         }
 
         &.social {
@@ -162,7 +170,7 @@
                     color: $dark-blue;
                     text-transform: uppercase;
                     font-weight: 600;
-                    font-size: 1rem;
+                    font-size: 1.1rem;
 
                     &:hover {
                         color: $light-blue;

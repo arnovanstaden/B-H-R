@@ -50,15 +50,15 @@ const Project = ({ project }) => {
                     <p>{project.description}</p>
 
                     <Grid container spacing={2}>
-                        <Grid item md={6}>
+                        <Grid item xs={12} md={6}>
                             <h5>Client</h5>
                             <p>{project.client}</p>
                         </Grid>
-                        <Grid item md={6}>
+                        <Grid item xs={12} md={6}>
                             <h5>Service Provider</h5>
                             <p>{project.serviceProvider}</p>
                         </Grid>
-                        <Grid item md={6}>
+                        <Grid item xs={12} md={6}>
                             <h5>Areas of Work</h5>
                             <ul>
                                 {project.workAreas.map((area, index) => (
@@ -66,7 +66,7 @@ const Project = ({ project }) => {
                                 ))}
                             </ul>
                         </Grid>
-                        <Grid item md={6}>
+                        <Grid item xs={12} md={6}>
                             <h5>Areas of Service</h5>
                             <ul>
                                 {project.serviceAreas.map((area, index) => (

@@ -107,6 +107,7 @@ const Header = () => {
                     onClose={handleDrawerToggle("right", false)}
                 >
                     <div className={styles.overlay}>
+                        <i className="icon-clear" onClick={handleDrawerToggle("right", true)}></i>
                         <div className={styles.menu}>
                             <Links />
                             <SocialLinks />

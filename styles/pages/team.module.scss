@@ -13,8 +13,12 @@
 
     .training {
 
-        .initiatives {
+        small {
+            padding-top: 0.5rem;
+            display: block;
+        }
 
+        .initiatives {
             h3 {
                 color: $light-blue;
                 font-size: 1.2rem;
@@ -92,9 +96,14 @@
         .textGrid {
             padding-top: 2rem;
 
-            h5 {
-                color: $light-blue;
-                font-size: 1.1rem;
+            .text {
+                // padding: 0.5rem;
+
+                h5 {
+                    color: $light-blue;
+                    font-size: 1.1rem;
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -115,5 +124,17 @@
                 margin-left: auto;
             }
         }
+    }
+
+    @media screen and (max-width:760px) {
+        .inclusion {
+
+            .contentBlock {
+                .text {
+                    padding: 1rem 0;
+                }
+            }
+        }
+
     }
 }

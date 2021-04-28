@@ -49,11 +49,15 @@
                 }
             }
 
-            p a {
-                color: $light-blue;
+            p {
+                text-align: right;
 
-                &:hover {
-                    color: $dark-blue;
+                a {
+                    color: $light-blue;
+
+                    &:hover {
+                        color: $dark-blue;
+                    }
                 }
             }
         }

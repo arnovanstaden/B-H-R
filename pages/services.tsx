@@ -57,7 +57,7 @@ const services = () => {
 
                     <div className={styles.row} id="design">
                         <Grid container spacing={5}>
-                            <Grid item md={6}>
+                            <Grid item xs={12} md={6}>
                                 <div className={styles.image}>
                                     <NextImage
                                         src="/images/pages/services/design.jpg"
@@ -88,7 +88,7 @@ const services = () => {
                                     </ul>
                                 </div>
                             </Grid>
-                            <Grid item md={6}>
+                            <Grid item xs={12} md={6}>
                                 <div className={styles.image}>
                                     <NextImage
                                         src="/images/pages/services/mechanical.jpg"
@@ -102,7 +102,7 @@ const services = () => {
                     <div className={styles.row} id="electrical">
 
                         <Grid container spacing={5}>
-                            <Grid item md={6}>
+                            <Grid item xs={12} md={6}>
                                 <div className={styles.image}>
                                     <NextImage
                                         src="/images/pages/services/electrical.jpg"
@@ -134,7 +134,7 @@ const services = () => {
                                     <p>Fire safety and protection systems</p>
                                 </div>
                             </Grid>
-                            <Grid item md={6}>
+                            <Grid item xs={12} md={6}>
                                 <div className={styles.image}>
                                     <NextImage
                                         src="/images/pages/services/fire-safety.jpg"
@@ -147,7 +147,7 @@ const services = () => {
 
                     <div className={styles.row} id="plumbing">
                         <Grid container spacing={5} >
-                            <Grid item md={6}>
+                            <Grid item xs={12} md={6}>
                                 <div className={styles.image}>
                                     <NextImage
                                         src="/images/pages/services/plumbing.jpg"
@@ -177,7 +177,7 @@ const services = () => {
                                     <p>Reducing the number of bacteria to safe levels without compromising the safety of the customer.</p>
                                 </div>
                             </Grid>
-                            <Grid item md={6}>
+                            <Grid item xs={12} md={6}>
                                 <div className={styles.image}>
                                     <NextImage
                                         src="/images/pages/services/sanitisation.jpg"

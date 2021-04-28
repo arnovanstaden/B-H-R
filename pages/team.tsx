@@ -53,7 +53,6 @@ const team = () => {
                     <h1>Training and Development</h1>
                     <p>Through training and development we equip our personnel to make the right decisions for the long-term success of our clients and our business.</p>
                     <NextImage src="/images/pages/team/training1.jpg" alt="BHR Training and Development" />
-
                     <small>
                         Image caption and description. Phasellus sagittis vel mauris nec pretium. n elementum nibh scelerisque sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                     </small>
@@ -148,7 +147,7 @@ const team = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid container className={styles.textGrid} spacing={5}>
+                    <Grid container className={styles.textGrid} spacing={4}>
                         <Grid item md={4}>
                             <div className={styles.text}>
                                 <h5>Management</h5>

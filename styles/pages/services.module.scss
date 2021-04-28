@@ -14,7 +14,6 @@
 
             &:last-child {
                 border-bottom: none;
-
             }
 
             .text {
@@ -22,12 +21,14 @@
                 flex-direction: column;
                 justify-content: center;
                 height: 100%;
+                width: 100%;
 
                 img {
                     width: 7rem;
                 }
 
                 h2 {
+                    margin-top: 0.5rem;
                     color: $dark-blue;
                     font-weight: 700;
                 }
@@ -50,6 +51,26 @@
                         font-size: 1rem;
                     }
                 }
+            }
+
+            .image {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        .grid {
+            .row {
+
+                &:nth-child(odd) {
+                    >div {
+                        >div:nth-child(1) {
+                            order: 2;
+                        }
+                    }
+                }
+
             }
         }
     }

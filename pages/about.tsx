@@ -92,7 +92,7 @@ const about = () => {
                     </Grid>
 
                     <div className={styles.dealers}>
-                        <h3>We are an authorised specialised dealer of</h3>
+                        <h3>We are an authorised specialised dealer of:</h3>
                         <div className={styles.logos}>
                             <img src="/images/pages/about/daikin.svg" alt="daikin logo" />
                             <img src="/images/pages/about/samsung.svg" alt="samsung logo" />
@@ -121,7 +121,7 @@ const about = () => {
 
                 <section id="values" className={styles.values}>
                     <h1>What Matters To Us</h1>
-                    <Grid container spacing={5}>
+                    <Grid container spacing={4}>
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>People</h2>

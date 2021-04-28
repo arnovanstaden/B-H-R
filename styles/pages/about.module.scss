@@ -20,7 +20,6 @@
         }
 
         .dealers {
-            text-align: center;
 
             .logos {
                 display: flex;
@@ -80,7 +79,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        text-align: center;
+        // text-align: center;
 
         .intro {
             .dealers {
@@ -91,6 +90,13 @@
                     img {
                         margin-bottom: 1rem;
                     }
+                }
+            }
+
+            .expertise {
+
+                .text {
+                    padding: 2rem 0
                 }
             }
         }
