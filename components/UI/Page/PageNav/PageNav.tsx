@@ -1,4 +1,4 @@
-
+import { useRef, useEffect, useState } from "react"
 // MUI
 import Container from "@material-ui/core/Container";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -7,11 +7,16 @@ import styles from "./nav.module.scss";
 
 const PageNav = ({ links, page }) => {
     // Config
+    const navRef = useRef<HTMLElement>(null)
     const isMobileDevice = useMediaQuery('(max-width:760px)');
-
     const keys = Object.keys(links);
+    let initialPos = 0;
 
-    // handlers
+    // State
+    const [isSticky, setIsSticky] = useState(false)
+
+
+    // Handlers
     const handleClick = (clickedElement) => {
         const tabs = document.querySelectorAll(`.${styles.links} a`);
         tabs.forEach((elem) => {
@@ -20,12 +25,31 @@ const PageNav = ({ links, page }) => {
         clickedElement.target.classList.add(styles.active);
     }
 
+    const handleNavStuck = () => {
+        const currentPos = navRef.current.getBoundingClientRect().top + document.documentElement.scrollTop;
+        if ((currentPos - initialPos) > 5) {
+            setIsSticky(true)
+        } else {
+            setIsSticky(false)
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener("scroll", handleNavStuck);
+        initialPos = navRef.current.getBoundingClientRect().top + document.documentElement.scrollTop;
+
+        return () => {
+            document.removeEventListener("scroll", handleNavStuck);
+        }
+    }, [])
+
+
     if (isMobileDevice) {
         return null
     }
 
     return (
-        <nav className={styles.nav}>
+        <nav className={`${styles.nav} ${isSticky ? styles.sticky : ""}`} ref={navRef} >
             <Container>
                 <div className={styles.links}>
                     {keys.map((key, index) => (
