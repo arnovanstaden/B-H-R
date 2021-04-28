@@ -93,6 +93,7 @@ const team = () => {
                         <Grid item md={6}>
                             <div className={styles.contentBlock}>
                                 <div className={styles.image}>
+                                    <div className={styles.overlay}></div>
                                     <NextImage src="/images/pages/team/inclusion1.jpg" alt="BHR Inclusion and Diversity" />
                                     <div className={styles.member}>
                                         <h6>Dieu-Merci</h6>
@@ -109,6 +110,7 @@ const team = () => {
                         <Grid item md={6}>
                             <div className={styles.contentBlock}>
                                 <div className={styles.image}>
+                                    <div className={styles.overlay}></div>
                                     <NextImage src="/images/pages/team/inclusion2.jpg" alt="BHR Inclusion and Diversity" />
                                     <div className={styles.member}>
                                         <h6>Raymond</h6>
