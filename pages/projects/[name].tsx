@@ -76,6 +76,26 @@ const Project = ({ project }) => {
                         </Grid>
                     </Grid>
                 </section>
+
+                <section className={styles.images}>
+
+
+
+                    <Grid container spacing={4}>
+                        <Grid item xs={12}>
+                            <NextImage src={`${imagePath}/1.jpg`} alt={`${project.name}`} />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <NextImage src={`${imagePath}/2.jpg`} alt={`${project.name}`} />
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <NextImage src={`${imagePath}/3.jpg`} alt={`${project.name}`} />
+                        </Grid>
+                        <Grid item xs={12} sm={6}>
+                            <NextImage src={`${imagePath}/4.jpg`} alt={`${project.name}`} />
+                        </Grid>
+                    </Grid>
+                </section>
             </Container>
 
         </Page>
