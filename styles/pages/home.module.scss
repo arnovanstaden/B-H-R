@@ -6,6 +6,9 @@
     .contentBlock {
         padding: 3rem 2rem;
         position: relative;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
 
         .text {
             position: relative;
@@ -31,7 +34,7 @@
             width: 100%;
             height: 100%;
             z-index: 3;
-            background-image: linear-gradient(rgba(16, 19, 26, 0.5), rgba(0, 0, 0, 0));
+            background-image: linear-gradient(rgba(16, 19, 26, 0.85), rgba(0, 0, 0, 0.2));
         }
 
         .image {
@@ -125,6 +128,35 @@
 
             h2 {
                 color: $white;
+            }
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        .contentBlock {
+            padding-bottom: 8rem;
+
+
+        }
+
+        .meet {
+
+            .solutions {
+                padding-bottom: 3rem;
+            }
+        }
+
+        .areas {
+
+            .projects {
+                .contentBlock {
+                    padding-bottom: 3rem;
+
+                    .image {
+                        display: none;
+                    }
+                }
+
             }
         }
     }

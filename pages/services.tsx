@@ -62,6 +62,8 @@ const services = () => {
                                     <NextImage
                                         src="/images/pages/services/design.jpg"
                                         alt="BHR Service - Design"
+                                        intrinsic
+                                        width={600}
                                     />
                                 </div>
                             </Grid>
@@ -93,6 +95,8 @@ const services = () => {
                                     <NextImage
                                         src="/images/pages/services/mechanical.jpg"
                                         alt="BHR Service - Mechanical"
+                                        intrinsic
+                                        width={600}
                                     />
                                 </div>
                             </Grid>
@@ -107,6 +111,8 @@ const services = () => {
                                     <NextImage
                                         src="/images/pages/services/electrical.jpg"
                                         alt="BHR Service - Electrical"
+                                        intrinsic
+                                        width={600}
                                     />
                                 </div>
                             </Grid>
@@ -139,6 +145,8 @@ const services = () => {
                                     <NextImage
                                         src="/images/pages/services/fire-safety.jpg"
                                         alt="BHR Service - Fire and Safety"
+                                        intrinsic
+                                        width={600}
                                     />
                                 </div>
                             </Grid>
@@ -152,6 +160,8 @@ const services = () => {
                                     <NextImage
                                         src="/images/pages/services/plumbing.jpg"
                                         alt="BHR Service - Plumbing"
+                                        intrinsic
+                                        width={600}
                                     />
                                 </div>
                             </Grid>
@@ -182,6 +192,8 @@ const services = () => {
                                     <NextImage
                                         src="/images/pages/services/sanitisation.jpg"
                                         alt="BHR Service - Sanitisation"
+                                        intrinsic
+                                        width={600}
                                     />
                                 </div>
                             </Grid>

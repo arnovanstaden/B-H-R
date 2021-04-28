@@ -1,11 +1,12 @@
-import Image from 'next/image';
 import { useEffect, useState } from "react";
+import { useMediaQuery } from 'react-responsive'
 
 // Components
 import Page from "../components/UI/Page/Page";
 import Hero from "../components/UI/Page/Hero/Hero";
 import AreasOfWork from "../components/Content/AreasOfWork/AreasOfWork"
 import BHRIcons from "../components/Content/BHRIcons/BHRIcons"
+import NextImage from "../components/NextImage/NextImage"
 
 // MUI
 import Container from "@material-ui/core/Container";
@@ -15,14 +16,17 @@ import Grid from "@material-ui/core/Grid";
 import styles from '../styles/pages/home.module.scss';
 
 export default function Home() {
+  const isMobile = useMediaQuery({ query: '(max-width: 760px)' });
+
 
   // Content Block Heights
   const [blockHeight, setBlockHeight] = useState(undefined);
 
+
   useEffect(() => {
     let height = 0;
     const element = document.getElementById('servicesBlock') as HTMLElement;
-    if (element) {
+    if (!isMobile && element) {
       setBlockHeight(element.offsetHeight)
     }
   }, [])
@@ -63,23 +67,22 @@ export default function Home() {
               </div>
             </Grid>
             <Grid item sm={12} md={6} >
-              <div className={`${styles.contentBlock} ${styles.services}`} id="#servicesBlock">
+              <div className={`${styles.contentBlock} ${styles.services}`} id="servicesBlock">
+                <div className={styles.image}>
+                  <NextImage
+                    src="/images/pages/home/services.jpg"
+                    alt="Picture of BHR HVC Service"
+                    intrinsic
+                    width={600}
+                    background
+                  />
+                </div>
                 <div className={styles.text}>
                   <h2>Services</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
                   <a href="/services" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
-                <div className={styles.image}>
-                  <div className="next-image-container">
-                    <Image
-                      src="/images/pages/home/services.jpg"
-                      alt="Picture of BHR HVC Maintenance"
-                      layout="fill"
-                      className="next-image"
-                    />
-                  </div>
-                </div>
               </div>
             </Grid>
           </Grid>
@@ -138,14 +141,13 @@ export default function Home() {
                 </div>
                 <div className={styles.overlay}></div>
                 <div className={styles.image}>
-                  <div className="next-image-container">
-                    <Image
-                      src="/images/pages/home/sanitisation.jpg"
-                      alt="Picture of BHR HVC Maintenance"
-                      layout="fill"
-                      className="next-image"
-                    />
-                  </div>
+                  <NextImage
+                    src="/images/pages/home/sanitisation.jpg"
+                    alt="Picture of BHR HVC sanitisation"
+                    intrinsic
+                    width={600}
+                    background
+                  />
                 </div>
               </div>
             </Grid>
@@ -158,15 +160,15 @@ export default function Home() {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
                   <a href="/services" className="button button--hover-white">Discover</a>
                 </div>
+                <div className={styles.overlay}></div>
                 <div className={styles.image}>
-                  <div className="next-image-container">
-                    <Image
-                      src="/images/pages/home/team.jpg"
-                      alt="Picture of BHR HVC Maintenance"
-                      layout="fill"
-                      className="next-image"
-                    />
-                  </div>
+                  <NextImage
+                    src="/images/pages/home/team.jpg"
+                    alt="Picture of BHR Team"
+                    intrinsic
+                    width={600}
+                    background
+                  />
                 </div>
               </div>
             </Grid>
@@ -174,7 +176,6 @@ export default function Home() {
 
           <Grid container className={styles.projects}>
             <Grid item xs={12} md={6}
-              style={{ minHeight: blockHeight }}
             >
               <div className={styles.contentBlock}>
                 <div className={styles.text}>
@@ -188,14 +189,13 @@ export default function Home() {
               style={{ minHeight: blockHeight }}
             >
               <div className={styles.image}>
-                <div className="next-image-container">
-                  <Image
-                    src="/images/pages/home/projects.jpg"
-                    alt="Picture of BHR HVC Maintenance"
-                    layout="fill"
-                    className="next-image"
-                  />
-                </div>
+                <NextImage
+                  src="/images/pages/home/projects.jpg"
+                  alt="Picture of BHR Projects"
+                  intrinsic
+                  width={600}
+                  background
+                />
               </div>
             </Grid>
           </Grid>

@@ -27,7 +27,12 @@ const projects = ({ allProjects }) => {
                 <Link href={linkPath}>
                     <a className={styles.project}>
                         <div className={styles.image}>
-                            <NextImage src={`${imagePath}/thumbnail.jpg`} alt="BHR Project" />
+                            <NextImage
+                                src={`${imagePath}/thumbnail.jpg`}
+                                alt="BHR Project"
+                                intrinsic
+                                width={600}
+                            />
                         </div>
                         <div className={styles.overlay}></div>
                         <div className={styles.text}>

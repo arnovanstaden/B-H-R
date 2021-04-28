@@ -52,7 +52,11 @@ const team = () => {
                 <section className={styles.training} id="training">
                     <h1>Training and Development</h1>
                     <p>Through training and development we equip our personnel to make the right decisions for the long-term success of our clients and our business.</p>
-                    <NextImage src="/images/pages/team/training1.jpg" alt="BHR Training and Development" />
+                    <NextImage src="/images/pages/team/training1.jpg"
+                    alt="BHR Training and Development"
+                    intrinsic
+                    width={1280}
+                     />
                     <small>
                         Image caption and description. Phasellus sagittis vel mauris nec pretium. n elementum nibh scelerisque sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                     </small>
@@ -71,7 +75,11 @@ const team = () => {
                         </Grid>
                         <Grid item md={6}>
                             <div className={styles.image}>
-                                <NextImage src="/images/pages/team/training2.jpg" alt="BHR Training and Development" />
+                                <NextImage src="/images/pages/team/training2.jpg"
+                                alt="BHR Training and Development"
+                                intrinsic
+                                width={600}
+                                />
                             </div>
                         </Grid>
                     </Grid>
@@ -94,7 +102,11 @@ const team = () => {
                             <div className={styles.contentBlock}>
                                 <div className={styles.image}>
                                     <div className={styles.overlay}></div>
-                                    <NextImage src="/images/pages/team/inclusion1.jpg" alt="BHR Inclusion and Diversity" />
+                                    <NextImage src="/images/pages/team/inclusion1.jpg"
+                                    alt="BHR Inclusion and Diversity"
+                                    intrinsic
+                                    width={600}
+                                />
                                     <div className={styles.member}>
                                         <h6>Dieu-Merci</h6>
                                         <p>Electrician</p>
@@ -111,7 +123,11 @@ const team = () => {
                             <div className={styles.contentBlock}>
                                 <div className={styles.image}>
                                     <div className={styles.overlay}></div>
-                                    <NextImage src="/images/pages/team/inclusion2.jpg" alt="BHR Inclusion and Diversity" />
+                                    <NextImage src="/images/pages/team/inclusion2.jpg"
+                                    alt="BHR Inclusion and Diversity"
+                                    intrinsic
+                                    width={600}
+                                />
                                     <div className={styles.member}>
                                         <h6>Raymond</h6>
                                         <p>Project Manager</p>
@@ -144,7 +160,11 @@ const team = () => {
                         </Grid>
                         <Grid item md={6}>
                             <div className={styles.image}>
-                            <NextImage src="/images/pages/team/hennie.jpg" alt="BHR Team Expertise" />
+                            <NextImage src="/images/pages/team/hennie.jpg"
+                                alt="BHR Team Expertise"
+                                intrinsic
+                                width={600}
+                                />
                             </div>
                         </Grid>
                     </Grid>

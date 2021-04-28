@@ -4,6 +4,17 @@
 
     >div {
         position: unset !important;
+        min-height: 100%;
+    }
+
+    &.intrinsic {
+        >div {
+            width: 100%;
+
+            >div:first-child {
+                display: none !important;
+            }
+        }
     }
 
     .image {
@@ -11,5 +22,14 @@
         width: 100% !important;
         position: relative !important;
         height: unset !important;
+    }
+
+    &.background {
+        .image {
+            object-fit: cover;
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute !important;
+        }
     }
 }

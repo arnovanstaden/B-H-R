@@ -87,10 +87,14 @@ const solutions = () => {
 
                     <Grid container spacing={5}>
                         <Grid item className={styles.block} sm={6}>
-                            <NextImage
-                                src="/images/pages/solutions/solutions1.jpg"
-                                alt="AMC (Annual Maintenance Contract)"
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src="/images/pages/solutions/solutions1.jpg"
+                                    alt="AMC (Annual Maintenance Contract)"
+                                    intrinsic
+                                    width={600}
+                                />
+                            </div>
                             <div className={styles.text}>
                                 <h3>AMC (Annual Maintenance Contract)</h3>
                                 <ul>
@@ -104,10 +108,14 @@ const solutions = () => {
                             </div>
                         </Grid>
                         <Grid item className={styles.block} sm={6}>
-                            <NextImage
-                                src="/images/pages/solutions/solutions2.jpg"
-                                alt="AMC (Annual Maintenance Contract)"
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src="/images/pages/solutions/solutions2.jpg"
+                                    alt="AMC (Annual Maintenance Contract)"
+                                    intrinsic
+                                    width={600}
+                                />
+                            </div>
                             <div className={styles.text}>
                                 <h3>Trouble Shooting</h3>
                                 <ul>
@@ -116,10 +124,14 @@ const solutions = () => {
                             </div>
                         </Grid>
                         <Grid item className={styles.block} sm={6}>
-                            <NextImage
-                                src="/images/pages/solutions/solutions3.jpg"
-                                alt="AMC (Annual Maintenance Contract)"
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src="/images/pages/solutions/solutions3.jpg"
+                                    alt="AMC (Annual Maintenance Contract)"
+                                    intrinsic
+                                    width={600}
+                                />
+                            </div>
                             <div className={styles.text}>
                                 <h3>Project Execution</h3>
                                 <ul>
@@ -132,10 +144,14 @@ const solutions = () => {
                             </div>
                         </Grid>
                         <Grid item className={styles.block} sm={6}>
-                            <NextImage
-                                src="/images/pages/solutions/solutions4.jpg"
-                                alt="AMC (Annual Maintenance Contract)"
-                            />
+                            <div className={styles.image}>
+                                <NextImage
+                                    src="/images/pages/solutions/solutions4.jpg"
+                                    alt="AMC (Annual Maintenance Contract)"
+                                    intrinsic
+                                    width={600}
+                                />
+                            </div>
                             <div className={styles.text}>
                                 <h3>Santisation (Life and Safety)</h3>
                                 <ul>

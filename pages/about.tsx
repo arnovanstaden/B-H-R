@@ -60,6 +60,8 @@ const about = () => {
                             <NextImage
                                 src="/images/pages/about/about1.jpg"
                                 alt="BHR Aircon Cleaning"
+                                intrinsic
+                                width={600}
                             />
                             <div className={styles.text}>
                                 <h2>International experience and local knowledge</h2>
@@ -77,6 +79,8 @@ const about = () => {
                             <NextImage
                                 src="/images/pages/about/about2.jpg"
                                 alt="BHR Welding"
+                                intrinsic
+                                width={600}
                             />
                             <div className={styles.text}>
                                 <h2>Bringing technology and innovation to Africa</h2>

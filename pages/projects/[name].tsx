@@ -41,7 +41,11 @@ const Project = ({ project }) => {
                     <h2>{project.name}</h2>
                     <h3>{project.focus}</h3>
                     <div className={styles.coverImage}>
-                        <NextImage src={`${imagePath}/cover.jpg`} alt={`${project.name} Cover Image`} />
+                        <NextImage src={`${imagePath}/cover.jpg`}
+                            alt={`${project.name} Cover Image`}
+                            intrinsic
+                            width={1280}
+                        />
                     </div>
                 </section>
 
@@ -83,16 +87,36 @@ const Project = ({ project }) => {
 
                     <Grid container spacing={4}>
                         <Grid item xs={12}>
-                            <NextImage src={`${imagePath}/1.jpg`} alt={`${project.name}`} />
+                            <NextImage
+                                src={`${imagePath}/1.jpg`}
+                                alt={`${project.name}`}
+                                intrinsic
+                                width={1280}
+                            />
                         </Grid>
                         <Grid item xs={12}>
-                            <NextImage src={`${imagePath}/2.jpg`} alt={`${project.name}`} />
+                            <NextImage
+                                src={`${imagePath}/2.jpg`}
+                                alt={`${project.name}`}
+                                intrinsic
+                                width={1280}
+                            />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <NextImage src={`${imagePath}/3.jpg`} alt={`${project.name}`} />
+                            <NextImage
+                                src={`${imagePath}/3.jpg`}
+                                alt={`${project.name}`}
+                                intrinsic
+                                width={600}
+                            />
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <NextImage src={`${imagePath}/4.jpg`} alt={`${project.name}`} />
+                            <NextImage
+                                src={`${imagePath}/4.jpg`}
+                                alt={`${project.name}`}
+                                intrinsic
+                                width={600}
+                            />
                         </Grid>
                     </Grid>
                 </section>

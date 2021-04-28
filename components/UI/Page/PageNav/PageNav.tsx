@@ -1,14 +1,16 @@
 import { useRef, useEffect, useState } from "react"
+import { useMediaQuery } from 'react-responsive'
+
+
 // MUI
 import Container from "@material-ui/core/Container";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import styles from "./nav.module.scss";
 
 const PageNav = ({ links, page }) => {
     // Config
     const navRef = useRef<HTMLElement>(null)
-    const isMobileDevice = useMediaQuery('(max-width:760px)');
+    const isMobile = useMediaQuery({ query: '(max-width: 760px)' });
     const keys = Object.keys(links);
     let initialPos = 0;
 
@@ -35,7 +37,7 @@ const PageNav = ({ links, page }) => {
     }
 
     useEffect(() => {
-        if (isMobileDevice) {
+        if (!isMobile) {
             document.addEventListener("scroll", handleNavStuck);
             initialPos = navRef.current.getBoundingClientRect().top + document.documentElement.scrollTop;
 
@@ -46,7 +48,7 @@ const PageNav = ({ links, page }) => {
     }, [])
 
 
-    if (isMobileDevice) {
+    if (isMobile) {
         return null
     }
 

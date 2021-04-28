@@ -1,23 +1,48 @@
 import Image from 'next/image';
+import ClassNames from "classnames";
 
 import styles from "./next-image.module.scss";
 
 interface IProps {
     src: string;
     alt: string;
+    intrinsic?: boolean;
+    width?: number;
+    background?: boolean
 }
 
-const NextImage = ({ src, alt }: IProps) => {
-    return (
-        <div >
-            <div className={styles.container}>
+// next/image creates unintended image styles. This components rectifies some styles to use the components just like a normal image, but still making use of the optimization & sizing features
+
+const NextImage = ({ src, alt, intrinsic, width, background }: IProps) => {
+
+    if (intrinsic) {
+        const classes = ClassNames(
+            styles.container,
+            styles.intrinsic,
+            background ? styles.background : null
+        )
+        return (
+            <div className={classes}>
                 <Image
                     src={src}
                     alt={alt}
-                    layout="fill"
+                    layout="intrinsic"
                     className={`Picture of ${styles.image}`}
+                    width={width}
+                    height="auto"
                 />
             </div>
+        )
+    }
+
+    return (
+        <div className={styles.container}>
+            <Image
+                src={src}
+                alt={alt}
+                layout="fill"
+                className={`Picture of ${styles.image}`}
+            />
         </div>
     )
 }
