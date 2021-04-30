@@ -41,8 +41,8 @@ export default function Home() {
       }}
     >
       <Hero
-        title="HVAC dolor sit amet, consectetur adipiscing elit."
-        subtitle="maintenance"
+        title="Building. Hospitality. Retail"
+        subtitle="solutions"
         alt="BHR Home Hero"
         src="/images/pages/home/hero.webp"
       />
@@ -100,7 +100,7 @@ export default function Home() {
           <Grid container spacing={5}>
             <Grid item xs={12} md={4} >
               <div className={styles.value}>
-                <h5>Sustainabilty</h5>
+                <h5>Sustainability</h5>
                 <p>
                   To ensure your needs have long-term cost-effectiveness and environmental sustainability
                 </p>
