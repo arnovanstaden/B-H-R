@@ -133,44 +133,28 @@ const about = () => {
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>People</h2>
-                                <p> <span className="rectify">1</span>
-                                    Donec fringilla porttitor velit, vitae
-                                    facilisis neque rutrum at. Etiam
-                                    ligula justo, elementum nec dolor in,
-                                    pharetra sagittis tortor.
+                                <p>We believe in equality and inclusion. Recognising the value of diversity.
                                 </p>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>Partnership</h2>
-                                <p> <span className="rectify">2</span>
-                                    Donec fringilla porttitor velit, vitae
-                                    facilisis neque rutrum at. Etiam
-                                    ligula justo, elementum nec dolor in,
-                                    pharetra sagittis tortor.
+                                <p>We focus on long-term partnerships and adding value to our client’s strategy.
                                 </p>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>Technology</h2>
-                                <p> <span className="rectify">3</span>
-                                    Donec fringilla porttitor velit, vitae
-                                    facilisis neque rutrum at. Etiam
-                                    ligula justo, elementum nec dolor in,
-                                    pharetra sagittis tortor.
+                                <p>One solution for all networks to maximise its potential.
                                 </p>
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
                             <div className={styles.item}>
                                 <h2>Delivery</h2>
-                                <p> <span className="rectify">4</span>
-                                    Donec fringilla porttitor velit, vitae
-                                    facilisis neque rutrum at. Etiam
-                                    ligula justo, elementum nec dolor in,
-                                    pharetra sagittis tortor.
+                                <p>A comprehensive approach with value driven sustainability.
                                 </p>
                             </div>
                         </Grid>

@@ -72,7 +72,7 @@ const Header = () => {
                         <i className="icon-facebook"></i>
                     </a>
                 </li>
-                <li>
+                {/* <li>
                     <a href="https://www.linkedin.com/" target="blank" aria-label="linkedin">
                         <i className="icon-linkedin"></i>
                     </a>
@@ -81,7 +81,7 @@ const Header = () => {
                     <a href="https://twitter.com" target="blank" aria-label="twitter">
                         <i className="icon-twitter"></i>
                     </a>
-                </li>
+                </li> */}
             </ul>
         )
     }

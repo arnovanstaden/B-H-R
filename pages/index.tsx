@@ -60,9 +60,7 @@ export default function Home() {
               <div className={`${styles.contentBlock} ${styles.solutions}`}>
                 <div className={styles.text}>
                   <h2>Industry Solutions</h2>
-                  <p>
-                    <span className="rectify">1</span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>A solution based approached for the MEFP industries.</p>
                   <a href="/solutions" className="button">Discover</a>
                 </div>
                 <BHRIcons />
@@ -81,9 +79,7 @@ export default function Home() {
                 </div>
                 <div className={styles.text}>
                   <h2>Services</h2>
-                  <p>
-                    <span className="rectify">2</span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>MEFP services for every Solution.</p>
                   <a href="/services" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
@@ -141,8 +137,7 @@ export default function Home() {
               <div className={`${styles.contentBlock} ${styles.sanitisation}`}>
                 <div className={styles.text}>
                   <h2>Sanitisation</h2>
-                  <p>                  <span className="rectify">3</span>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>Our air care is beyond compare, the core for efficiency and safety</p>
                   <a href="/services#sanitisation" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
@@ -163,8 +158,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque 
               <div className={`${styles.contentBlock} ${styles.team}`}>
                 <div className={styles.text}>
                   <h2>Our Team</h2>
-                  <p>                  <span className="rectify">4</span>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                  <p>We invest in our people. Growing skills, delivering on our promise.</p>
                   <a href="/team" className="button button--hover-white">Discover</a>
                 </div>
                 <div className={styles.overlay}></div>
@@ -188,8 +182,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque 
                 <div className={styles.text}>
                   <h2>Projects</h2>
                   <p>
-                    <span className="rectify">5</span>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque felis convallis.</p>
+                    We deliver on what we say. You will be comfortable choosing BHR Solutions.
+                  </p>
                   <a href="/projects" className="button button--dark">Discover</a>
                 </div>
               </div>

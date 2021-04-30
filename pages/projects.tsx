@@ -23,24 +23,22 @@ const projects = ({ allProjects }) => {
         const imagePath = `/images/pages/projects/${dashName}`
 
         return (
-            <Grid item sm={6}>
-                <Link href={linkPath}>
-                    <a className={styles.project}>
-                        <div className={styles.image}>
-                            <NextImage
-                                src={`${imagePath}/thumbnail.jpg`}
-                                alt="BHR Project"
-                                intrinsic
-                                width={600}
-                            />
-                        </div>
-                        <div className={styles.overlay}></div>
-                        <div className={styles.text}>
-                            <h3>{project.name}</h3>
-                            <small>{project.focus}</small>
-                        </div>
-                    </a>
-                </Link>
+            <Grid item sm={6} lg={4}>
+                <div className={styles.project}>
+                    <div className={styles.image}>
+                        <NextImage
+                            src={`${imagePath}/thumbnail.jpg`}
+                            alt="BHR Project"
+                            intrinsic
+                            width={600}
+                        />
+                    </div>
+                    <div className={styles.overlay}></div>
+                    <div className={styles.text}>
+                        <h3>{project.name}</h3>
+                        <small>{project.focus}</small>
+                    </div>
+                </div>
             </Grid>
         )
     }
@@ -58,29 +56,85 @@ const projects = ({ allProjects }) => {
             <TextIntro title="Projects" />
 
             <Container>
-                <section className={styles.testimonial}>
-                    <h1>
-                        <span className="rectify">1</span>
-                        “BHR delivered top-class service, and provided solutions that saved our budget. Etiam vitae erat luctus, scelerisque leo eu, faucibus ligula.”</h1>
-                    <p>Name Surname, Designation, Company</p>
+
+                <section className={styles.intro}>
+                    <div className="heading">
+                        <h1>We deliver on what we say. <br />
+                            <span>Time is money, we save your business both.</span>
+                        </h1>
+                        <h2>BHR Solutions provides sales and support of all maintenance, construction and infrastructure requirements to the building, hospitality and retail industries. Every project is approached with a delivery mindset.</h2>
+                    </div>
                 </section>
+
 
                 <section className={styles.grid}>
                     <h1>Featured Projects</h1>
 
-                    <Grid container spacing={5}>
+                    {/* <Grid container spacing={5}>
                         {allProjects.map((project, index) => (
                             <Project key={index} {...project} />
                         ))}
+                    </Grid> */}
+
+                    <Grid container spacing={5}>
+                        <Grid item lg={4} md={2} xs={12}>
+                            <div className={styles.textProject}>
+                                <h5>HILTON CURIO NIGERIA</h5>
+                                <p>Convention Centre</p>
+                                <p>Phase 3 and 4</p>
+                                <p>HVAC maintenance</p>
+                            </div>
+                        </Grid>
+                        <Grid item lg={4} md={2} xs={12}>
+                            <div className={styles.textProject}>
+                                <h5>QUITS AVIATION NIGERIA</h5>
+                                <p>New installation</p>
+                                <p>HVAC maintenance</p>
+                            </div>
+                        </Grid>
+                        <Grid item lg={4} md={2} xs={12}>
+                            <div className={styles.textProject}>
+                                <h5>RADISSON LAGOS (CHELSEA)</h5>
+                                <p>New project</p>
+                            </div>
+                        </Grid>
+                        <Grid item lg={4} md={2} xs={12}>
+                            <div className={styles.textProject}>
+                                <h5>FOUR POINTS SHERATON</h5>
+                                <p>Renovation</p>
+                            </div>
+                        </Grid>
+                        <Grid item lg={4} md={2} xs={12}>
+                            <div className={styles.textProject}>
+                                <h5>RADISSON GABON</h5>
+                                <p>Project and AMC</p>
+                            </div>
+                        </Grid>
+                        <Grid item lg={4} md={2} xs={12}>
+                            <div className={styles.textProject}>
+                                <h5>PARK INN GABON</h5>
+                                <p>Project and AMC</p>
+                            </div>
+                        </Grid>
+                        <Grid item lg={4} md={2} xs={12}>
+                            <div className={styles.textProject}>
+                                <h5>HOTEL RE-NDAMA (Erstwhile LE MERIDIEN)</h5>
+                                <p>Project and AMC</p>
+                            </div>
+                        </Grid>
                     </Grid>
+
+                    <div className={styles.logos}>
+                        <img src="/images/pages/projects/logos/1.jpg" alt="Client Logo" />
+                        <img src="/images/pages/projects/logos/2.jpg" alt="Client Logo" />
+                        <img src="/images/pages/projects/logos/3.jpg" alt="Client Logo" />
+                        <img src="/images/pages/projects/logos/4.jpg" alt="Client Logo" />
+                        <img src="/images/pages/projects/logos/5.jpg" alt="Client Logo" />
+                        <img src="/images/pages/projects/logos/6.jpg" alt="Client Logo" />
+                    </div>
                 </section>
 
-                <section className={styles.testimonial}>
-                    <h1>
-                        <span className="rectify">2</span>
-                        “BHR delivered top-class service, and provided solutions that saved our budget. Etiam vitae erat luctus, scelerisque leo eu, faucibus ligula.”</h1>
-                    <p>Name Surname, Designation, Company</p>
-                </section>
+
 
             </Container>
 

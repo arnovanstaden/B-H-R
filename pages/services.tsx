@@ -72,6 +72,25 @@ const services = () => {
                                     <img src="/images/icons/services/design.svg" alt="" />
                                     <h2>Design</h2>
                                     <p>We are an approach driven company breaking down large projects to suit and adapt to the client’s needs.</p>
+                                    <br />
+                                    <ul>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Architectural
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Interior
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Exterior
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            MEFP
+                                        </li>
+                                    </ul>
                                 </div>
                             </Grid>
                         </Grid>
@@ -84,9 +103,43 @@ const services = () => {
                                     <img src="/images/icons/services/mechanical.svg" alt="" />
                                     <h2>Mechanical</h2>
                                     <ul>
-                                        <li>AC</li>
-                                        <li>Ventilation</li>
-                                        <li>Refrigeration</li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Commercial Air-Conditioning (CAC). Chillers (Aermec, Trane, York, Carrier) Pumps, Cooling Towers, AHU’s, FCU’s, Piping &amp; valves &amp; water flow balancing, plate heat exchanger (Heat recovery system).
+                                            </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            VRF (DVM) systems. Daikin, LG, Samsung, Alliance. Diagnostics (LATS program), FCU, Outdoor units, BMS (Building management systems)
+                                            </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Residential Air-Conditioning – Midwall, Cassette and Ducted Hide Away Units
+                                            </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Duct cleaning &amp; air balancing.
+                                            </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Extract systems
+                                            </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Fresh air systems
+                                            </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Fire &amp; life safety- extract systems, make-up air systems, motorized &amp; fusible link dampers.
+                                            </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            VSD (Variable speed drives)
+                                            </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Air curtains.
+                                            </li>
+
                                     </ul>
                                 </div>
                             </Grid>
@@ -121,10 +174,30 @@ const services = () => {
                                     <img src="/images/icons/services/electrical.svg" alt="" />
                                     <h2>Electrical</h2>
                                     <ul>
-                                        <li>Single phase</li>
-                                        <li>Three phase</li>
-                                        <li>Commercial</li>
-                                        <li>Residential</li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Risk assessment - Thermographic, energy management analyser.
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Load analyse &amp; testing
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Phase balancing
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Earthing analyse &amp; testing (lightning protection)
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Switch room &amp; switchgear. monitor, testing, programming.
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Transformers
+                                        </li>
                                     </ul>
                                 </div>
                             </Grid>
@@ -137,7 +210,20 @@ const services = () => {
                                 <div className={styles.text}>
                                     <img src="/images/icons/services/fire-safety.svg" alt="" />
                                     <h2>Fire and Safety</h2>
-                                    <p>Fire safety and protection systems</p>
+                                    <ul>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Smoke sensor systems
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Sprinkler systems
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Carbon monoxide sensor systems
+                                        </li>
+                                    </ul>
                                 </div>
                             </Grid>
                             <Grid item xs={12} md={6}>
@@ -170,8 +256,42 @@ const services = () => {
                                     <img src="/images/icons/services/plumbing.svg" alt="" />
                                     <h2>Plumbing</h2>
                                     <ul>
-                                        <li>Heat pumps</li>
-                                        <li>Plumbing systems that conveys fluids</li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Hot water reservoirs - Insulation, anodes, valves, piping
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Hot water articulation pump systems
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Plate heat exchanger
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Heat pump systems
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Fresh water reservoirs
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Fresh water pump articulation systems
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Water purification &amp; treatment plants
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Sewerage treatment plant pumps
+                                        </li>
+                                        <li>
+                                            <i className="icon-bullet"></i>
+                                            Drainage inspections
+                                        </li>
                                     </ul>
                                 </div>
                             </Grid>
@@ -184,7 +304,8 @@ const services = () => {
                                 <div className={styles.text}>
                                     <img src="/images/icons/services/sanitisation.svg" alt="" />
                                     <h2>Sanitisation</h2>
-                                    <p>Reducing the number of bacteria to safe levels without compromising the safety of the customer.</p>
+                                    <p>We use EPA registered water-based disinfectants and alcohol-based sanitisers and disinfects.</p>
+                                    <p>Surface sanitation solutions for all industries and full HVAC networks to help meet compliance requirements</p>
                                 </div>
                             </Grid>
                             <Grid item xs={12} md={6}>
